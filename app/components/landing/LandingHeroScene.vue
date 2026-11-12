@@ -29,10 +29,11 @@ const { t } = useI18n()
       />
     </div>
 
-    <!-- 最前層：三張小卡，速度各不同 -->
+    <!-- 最前層：三張小卡，速度各不同。
+         進度卡放在框的左上角外側、插圖人物頭頂上方的留白，視差幅度較小，捲動時才不會蓋到人臉 -->
     <div
-      v-parallax="-0.22"
-      class="absolute top-[12%] -left-3 w-56 sm:-left-10 sm:w-64"
+      v-parallax="-0.1"
+      class="absolute -top-8 -left-3 w-52 sm:-top-10 sm:-left-12 sm:w-60"
     >
       <div class="rounded-2xl bg-white p-4 shadow-[0_20px_50px_-20px_rgb(0_0_0/0.35)] motion-safe:animate-[float-y_6s_ease-in-out_infinite]">
         <p class="text-xs font-medium text-ink/55">
