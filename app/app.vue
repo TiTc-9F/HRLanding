@@ -1,20 +1,19 @@
+<script setup lang="ts">
+const { site } = useAppConfig()
+
+useHead({
+  htmlAttrs: { lang: 'en' },
+})
+
+useSeoMeta({
+  title: `${site.productName} | ${site.tagline}`,
+  description: 'From onboarding and attendance to leave and payroll, run every HR process on one platform and give your HR team time back for people.',
+})
+</script>
+
 <template>
-  <div class="min-h-screen p-6 font-sans">
+  <div class="bg-white font-sans text-slate-700 antialiased">
     <NuxtRouteAnnouncer />
-    <nav class="mb-6 flex gap-4">
-      <NuxtLink
-        to="/"
-        class="text-blue-600 underline"
-      >
-        首頁
-      </NuxtLink>
-      <NuxtLink
-        to="/about"
-        class="text-blue-600 underline"
-      >
-        關於
-      </NuxtLink>
-    </nav>
     <NuxtPage />
   </div>
 </template>
