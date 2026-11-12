@@ -38,19 +38,23 @@ const cases = ['global', 'tech', 'growth'] as const
           </p>
 
           <figure class="mt-7 flex flex-1 flex-col">
-            <figcaption>
+            <!-- 手機與平板（單欄）：頭像在左、姓名職稱在右，不會只有左半邊有東西；
+                 桌機三欄：頭像在上、姓名在下 -->
+            <figcaption class="flex items-center gap-5 lg:block">
               <!-- 名字就在旁邊，頭像當裝飾，不重複唸 -->
               <LandingPhoto
                 :name="`portrait-${key}`"
                 alt=""
                 ratio="aspect-square"
-                class="w-36 rounded-2xl sm:w-40"
+                class="w-24 shrink-0 rounded-2xl sm:w-28 lg:w-40"
               />
-              <span class="mt-6 block font-display text-2xl font-medium tracking-tight text-ink">
-                {{ t(`cases.items.${key}.person`) }}
-              </span>
-              <span class="mt-1 block text-sm leading-relaxed text-ink/55">
-                {{ t(`cases.items.${key}.role`) }}<br>@ {{ t(`cases.items.${key}.company`) }}
+              <span class="block min-w-0">
+                <span class="block font-display text-2xl font-medium tracking-tight text-ink lg:mt-6">
+                  {{ t(`cases.items.${key}.person`) }}
+                </span>
+                <span class="mt-1 block text-sm leading-relaxed text-ink/55">
+                  {{ t(`cases.items.${key}.role`) }}<br>@ {{ t(`cases.items.${key}.company`) }}
+                </span>
               </span>
             </figcaption>
             <blockquote class="mt-6 flex-1 text-lg leading-relaxed text-pretty text-ink/80">
