@@ -22,9 +22,17 @@ useHead(() => ({
   ],
 }))
 
+// 貼到 LINE、Slack、Facebook 時的標題、說明與縮圖（public/og-image.jpg，1200×630）
 useSeoMeta({
   title: () => t('meta.title', { name: site.productName }),
-  description: () => t('meta.description'),
+  description: () => t('meta.description', { name: site.productName }),
+  ogTitle: () => t('meta.title', { name: site.productName }),
+  ogDescription: () => t('meta.description', { name: site.productName }),
+  ogImage: `${site.siteUrl}/og-image.jpg`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 </script>
 
