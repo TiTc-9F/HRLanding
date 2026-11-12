@@ -4,7 +4,12 @@ useHead({ title: '首頁' })
 
 <template>
   <main>
-    <h1>Nuxt + Vue + TypeScript + Vite</h1>
-    <CounterCard title="計數器範例" :initial="1" />
+    <h1 class="mb-6 text-3xl font-bold">
+      Nuxt + Vue + TypeScript + Vite
+    </h1>
+    <CounterCard
+      title="計數器範例"
+      :initial="1"
+    />
   </main>
 </template>

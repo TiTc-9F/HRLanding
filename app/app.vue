@@ -1,15 +1,20 @@
 <template>
-  <div>
+  <div class="min-h-screen p-6 font-sans">
     <NuxtRouteAnnouncer />
-    <nav class="nav">
-      <NuxtLink to="/">首頁</NuxtLink>
-      <NuxtLink to="/about">關於</NuxtLink>
+    <nav class="mb-6 flex gap-4">
+      <NuxtLink
+        to="/"
+        class="text-blue-600 underline"
+      >
+        首頁
+      </NuxtLink>
+      <NuxtLink
+        to="/about"
+        class="text-blue-600 underline"
+      >
+        關於
+      </NuxtLink>
     </nav>
     <NuxtPage />
   </div>
 </template>
-
-<style>
-body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; }
-.nav { display: flex; gap: 16px; margin-bottom: 24px; }
-</style>

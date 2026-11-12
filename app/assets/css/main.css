@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* 設計稿的字型、顏色等設計 token 可以加在這裡，例如：
+@theme {
+  --font-sans: "Noto Sans TC", system-ui, sans-serif;
+  --color-brand: #2563eb;
+}
+*/

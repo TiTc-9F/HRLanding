@@ -8,15 +8,26 @@ const { count, increment, reset } = useCounter(props.initial)
 </script>
 
 <template>
-  <div class="card">
-    <h2>{{ props.title }}</h2>
-    <p>Count: {{ count }}</p>
-    <button @click="increment">+1</button>
-    <button @click="reset">Reset</button>
+  <div class="max-w-xs rounded-lg border border-gray-300 p-4">
+    <h2 class="mb-2 text-xl font-bold">
+      {{ props.title }}
+    </h2>
+    <p class="mb-3">
+      Count: {{ count }}
+    </p>
+    <div class="flex gap-2">
+      <button
+        class="rounded border border-gray-400 px-3 py-1 hover:bg-gray-100"
+        @click="increment"
+      >
+        +1
+      </button>
+      <button
+        class="rounded border border-gray-400 px-3 py-1 hover:bg-gray-100"
+        @click="reset"
+      >
+        Reset
+      </button>
+    </div>
   </div>
 </template>
-
-<style scoped>
-.card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; max-width: 320px; }
-button { margin-right: 8px; }
-</style>
