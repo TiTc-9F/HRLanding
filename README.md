@@ -1,77 +1,47 @@
 # HRLanding
 
-Nuxt 4 + Vue 3 + TypeScript + Vite 專案，推到 main 會自動部署到 GitHub Pages。
+Nuxt 4 + Vue 3 + TypeScript + Vite 專案，套件管理使用 **pnpm**。推到 `main` 會自動部署到 GitHub Pages。
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 環境需求
 
-## Setup
+- Node.js 26（版本寫在 `.nvmrc`）
+- pnpm（版本寫在 `package.json` 的 `packageManager`）
 
-Make sure to install dependencies:
+## 安裝
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## 開發
 
-Start the development server on `http://localhost:3000`:
+啟動開發伺服器，網址為 `http://localhost:3000`：
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm run dev
 ```
 
-## Production
-
-Build the application for production:
+## 型別檢查
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm run typecheck
 ```
 
-Locally preview production build:
+## 打包
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+pnpm run build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+預覽打包結果：
+
+```bash
+pnpm run preview
+```
+
+## 部署
+
+推到 `main` 後，GitHub Actions（`.github/workflows/deploy.yml`）會自動 build 並部署到 GitHub Pages。
+需先在 repo 的 **Settings → Pages** 將 Source 設為 **GitHub Actions**。
+
+更多資訊請見 [Nuxt 文件](https://nuxt.com/docs/getting-started/introduction)。
