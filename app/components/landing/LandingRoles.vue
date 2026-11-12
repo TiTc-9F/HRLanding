@@ -63,11 +63,11 @@ function points(key: string) {
 
       <div
         ref="track"
-        class="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 [scrollbar-width:none] sm:px-6 lg:mt-0 lg:w-max lg:snap-none lg:items-center lg:overflow-visible lg:px-[max(2rem,calc((100vw-80rem)/2+2rem))] motion-reduce:lg:mt-12 motion-reduce:lg:w-auto motion-reduce:lg:overflow-x-auto"
+        class="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 [scrollbar-width:none] sm:px-6 lg:mt-0 lg:w-max lg:snap-none lg:overflow-visible lg:px-[max(2rem,calc((100vw-80rem)/2+2rem))] motion-reduce:lg:mt-12 motion-reduce:lg:w-auto motion-reduce:lg:overflow-x-auto"
         :style="trackStyle"
       >
-        <!-- 桌機橫向捲動時，標題是卡片列的第一格，高度只算卡片本身 -->
-        <div class="hidden w-[26rem] shrink-0 pr-8 lg:block motion-reduce:lg:hidden">
+        <!-- 桌機橫向捲動時，標題是卡片列的第一格，垂直置中；卡片則拉成一樣高，內容長短不同也會對齊 -->
+        <div class="hidden w-[26rem] shrink-0 self-center pr-8 lg:block motion-reduce:lg:hidden">
           <LandingSectionHeading
             :eyebrow="t('audience.eyebrow')"
             :title="t('audience.title')"

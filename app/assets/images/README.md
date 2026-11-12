@@ -1,6 +1,6 @@
 # Landing page 插圖（Orca 品牌風格）
 
-這個資料夾放首頁的 12 張插圖。**檔名就是位置名稱**，放進來就會自動顯示；還沒放的位置會顯示灰色占位框。
+這個資料夾放首頁的 9 張插圖與 3 張客戶頭像。**檔名就是位置名稱**，放進來就會自動顯示；還沒放的位置會顯示灰色占位框。
 
 ## 怎麼用 ChatGPT 產圖
 
@@ -139,43 +139,40 @@ No text, no letters, no numbers, no logos, no watermarks, no neon or glow effect
 Image size: 1536×1024 (landscape).
 ```
 
-## 10. `scenario-global.png`：客戶案例「跨國團隊」（會疊白色公司名）
+## 10–12. 客戶案例的真人頭像
 
-- ChatGPT 尺寸：**1024 × 1536（直式）**
-- 頁面顯示：4:5 直式，捲動時在框裡上下移動；下方約 30% 會疊白色公司名和說明
+案例卡改成「真人頭像 + 姓名職稱 + 引言 + 數字 + 公司標誌」。三張要像同一場拍攝：同一個背景色、同一種光線、同樣胸上的構圖。
 
-```
-Flat vector-style illustration in a warm, friendly corporate style, on a deep charcoal background (#1C1A19). Two colleagues in two different offices, each framed in a rounded window shape, talking happily over a video call; a flowing lime-yellow ribbon (#E3E63F) connects the two windows across the frame, with a few small abstract dots along the ribbon suggesting two cities far apart. Accents in soft blush peach (#EFD6C9), warm white and light grey. Characters are East and Southeast Asian adults with simple friendly faces: dot eyes, small smiles, rosy cheeks.
-Brand motif: a small black-and-white orca dorsal fin peeking out of a soft grey wave near the middle right.
-Composition: vertical portrait. Keep the people and windows in the upper 65% of the frame. Keep the bottom 30% plain dark charcoal, because white text will sit there.
-No text, no letters, no numbers, no logos, no watermarks, no neon or glow effects.
-Image size: 1024×1536 (portrait).
-```
+- ChatGPT 尺寸：**1024 × 1024（正方形）**
+- 頁面顯示：正方形圓角，約 160 × 160
+- 這三張**用真實攝影風格**，不套用上面的插畫風格；開新對話產，不要先上傳插畫素材
+- 人物是虛構的：示意客戶的名字與引言是編的，所以不要用真人照片或圖庫照片，免得把沒說過的話放在真人臉上
 
-## 11. `scenario-tech.png`：客戶案例「技術職為主」（會疊白色公司名）
-
-- ChatGPT 尺寸：**1024 × 1536（直式）**
-- 頁面顯示：4:5 直式；下方約 30% 會疊白色公司名和說明
+### 10. `portrait-global.png`：Grace Chou，HR 經理（Harborline，跨國物流）
 
 ```
-Flat vector-style illustration in a warm, friendly corporate style, on a deep charcoal background (#1C1A19). Two software engineers pair-reviewing work at a desk with two monitors showing abstract code-like rounded bars (no readable characters), one explaining and the other nodding; above them, a simple staircase of three rounded steps in lime-yellow (#E3E63F) with a small flag at the top, suggesting a promotion path. A flowing lime-yellow ribbon wraps around the desk. Accents in soft blush peach (#EFD6C9), warm white and light grey. Characters are East Asian adults with simple friendly faces: dot eyes, small smiles, rosy cheeks, one wearing round glasses.
-Brand motif: a small black-and-white orca dorsal fin peeking out of a soft grey wave near the middle left.
-Composition: vertical portrait. Keep the people, desk and steps in the upper 65% of the frame. Keep the bottom 30% plain dark charcoal, because white text will sit there.
-No text, no letters, no numbers, no logos, no watermarks, no neon or glow effects.
-Image size: 1024×1536 (portrait).
+Photorealistic studio headshot of a fictional person (not based on any real individual), for a B2B software website testimonial. Chest-up, centered, facing the camera with a gentle, genuine smile. Plain seamless warm light-grey backdrop (#E6E3DC), soft diffused window light from the left, subtle natural skin texture, 85mm lens look at f/4, neutral and slightly warm color grading, clean editorial corporate style.
+The person: a Taiwanese woman in her late 30s, an HR manager at a logistics company with offices in Taiwan and Singapore. Shoulder-length straight black hair, light natural makeup, small stud earrings. Cream silk blouse under a charcoal blazer. Calm, approachable and confident.
+No text, no logos, no watermarks, no props in hand.
+Image size: 1024×1024 (square).
 ```
 
-## 12. `scenario-growth.png`：客戶案例「快速成長」（會疊白色公司名）
-
-- ChatGPT 尺寸：**1024 × 1536（直式）**
-- 頁面顯示：4:5 直式；下方約 30% 會疊白色公司名和說明
+### 11. `portrait-tech.png`：Daniel Ho，工程副總（Kitewave，軟體公司）
 
 ```
-Flat vector-style illustration in a warm, friendly corporate style, on a deep charcoal background (#1C1A19). A new hire on their first day carrying a new laptop and a welcome tote bag, being welcomed by a smiling colleague who gestures them forward along a path; along the path, three small rounded milestone markers (a sprout, a calendar with one lime-yellow day, a small flag) connected by a flowing lime-yellow ribbon (#E3E63F). Accents in soft blush peach (#EFD6C9), warm white and light grey. Characters are Southeast and East Asian adults with simple friendly faces: dot eyes, small smiles, rosy cheeks.
-Brand motif: a small black-and-white orca dorsal fin peeking out of a soft grey wave near the upper right.
-Composition: vertical portrait. Keep the people and the path in the upper 65% of the frame. Keep the bottom 30% plain dark charcoal, because white text will sit there.
-No text, no letters, no numbers, no logos, no watermarks, no neon or glow effects.
-Image size: 1024×1536 (portrait).
+Photorealistic studio headshot of a fictional person (not based on any real individual), for a B2B software website testimonial. Chest-up, centered, facing the camera with a gentle, genuine smile. Plain seamless warm light-grey backdrop (#E6E3DC), soft diffused window light from the left, subtle natural skin texture, 85mm lens look at f/4, neutral and slightly warm color grading, clean editorial corporate style.
+The person: a Singaporean Chinese man in his early 40s, VP of Engineering at a software company. Short, neatly styled black hair with a little grey at the temples, thin round metal glasses, clean-shaven. Charcoal crew-neck knit sweater over a white T-shirt. Relaxed, thoughtful and friendly.
+No text, no logos, no watermarks, no props in hand.
+Image size: 1024×1024 (square).
+```
+
+### 12. `portrait-growth.png`：Iris Wang，人資長（Mapleton Health，連鎖診所）
+
+```
+Photorealistic studio headshot of a fictional person (not based on any real individual), for a B2B software website testimonial. Chest-up, centered, facing the camera with a gentle, genuine smile. Plain seamless warm light-grey backdrop (#E6E3DC), soft diffused window light from the left, subtle natural skin texture, 85mm lens look at f/4, neutral and slightly warm color grading, clean editorial corporate style.
+The person: a Taiwanese woman in her mid 40s, Chief People Officer at a fast-growing clinic group. Black hair tied back in a neat low bun, a few loose strands. Soft blush-peach top (#EFD6C9) under a white tailored blazer. Warm, steady and reassuring.
+No text, no logos, no watermarks, no props in hand.
+Image size: 1024×1024 (square).
 ```
 
 ---

@@ -1,7 +1,12 @@
 <script setup lang="ts">
 // 首屏右側的分層畫面：陶土色底板與萊姆黃圓形在最後面、人物照片在中間、三張產品小卡在最前面。
 // 每一層用 v-parallax 以不同速度移動，捲動時產生深度；小卡另外有輕微的待機漂浮。
+// 進度卡會循環播放「第一關完成 → 第二關進行中」，減少動態時直接停在這個畫面。
 const { t } = useI18n()
+
+const reviewCard = ref<HTMLElement>()
+const { step } = useStepLoop(reviewCard, 2, { interval: 1100, hold: 3200 })
+const bars = computed(() => [step.value >= 1 ? 100 : 0, step.value >= 2 ? 62 : 0, 0])
 </script>
 
 <template>
@@ -32,6 +37,7 @@ const { t } = useI18n()
     <!-- 最前層：三張小卡，速度各不同。
          進度卡放在框的左上角外側、插圖人物頭頂上方的留白，視差幅度較小，捲動時才不會蓋到人臉 -->
     <div
+      ref="reviewCard"
       v-parallax="-0.1"
       class="absolute -top-8 -left-3 w-52 sm:-top-10 sm:-left-12 sm:w-60"
     >
@@ -41,17 +47,17 @@ const { t } = useI18n()
         </p>
         <div class="mt-3 space-y-2.5">
           <div
-            v-for="(w, i) in [100, 62, 0]"
+            v-for="(w, i) in bars"
             :key="i"
             class="flex items-center gap-2"
           >
             <span
-              class="grid size-5 shrink-0 place-items-center rounded-full text-[10px] font-semibold"
+              class="grid size-5 shrink-0 place-items-center rounded-full text-[10px] font-semibold transition-colors duration-500"
               :class="w === 100 ? 'bg-ink text-accent' : 'bg-mist text-ink/60'"
             >{{ i + 1 }}</span>
             <span class="h-1.5 flex-1 overflow-hidden rounded-full bg-mist">
               <span
-                class="block h-full rounded-full bg-ink"
+                class="block h-full rounded-full bg-ink transition-[width] duration-1000 ease-out-expo"
                 :style="{ width: `${w}%` }"
               />
             </span>

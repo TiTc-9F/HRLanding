@@ -1,14 +1,10 @@
 <script setup lang="ts">
-// 深度證明：客戶案例卡（具名的人 + 一句引言 + 兩個成效數字），放在產品特色之後、CTA 之前。
-// 目前是提案用的示意客戶，site.mockProof 關掉時整區不顯示。照片在框裡做視差。
+// 深度證明：客戶案例（真人頭像 + 姓名職稱 + 一句引言 + 兩個成效數字 + 公司標誌），放在產品特色之後、CTA 之前。
+// 目前是提案用的示意客戶，頭像是 AI 生成的虛構人物；site.mockProof 關掉時整區不顯示。
 const { site } = useAppConfig()
 const { t } = useI18n()
 
-const cases = [
-  { key: 'global', offset: '' },
-  { key: 'tech', offset: 'lg:mt-14' },
-  { key: 'growth', offset: 'lg:mt-28' },
-] as const
+const cases = ['global', 'tech', 'growth'] as const
 </script>
 
 <template>
@@ -30,72 +26,57 @@ const cases = [
         </span>
       </div>
 
-      <ul class="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <ul class="mt-16 grid grid-cols-1 border-t border-ink/10 lg:grid-cols-3">
         <li
-          v-for="item in cases"
-          :key="item.key"
-          class="flex flex-col overflow-hidden rounded-[1.75rem] bg-paper"
-          :class="item.offset"
+          v-for="(key, i) in cases"
+          :key="key"
+          v-reveal="i"
+          class="flex flex-col border-b border-ink/10 py-10 lg:border-r lg:border-b-0 lg:px-10 lg:py-12 lg:first:pl-0 lg:last:border-r-0 lg:last:pr-0"
         >
-          <div class="relative aspect-[4/5] overflow-hidden">
-            <div
-              v-parallax="-0.08"
-              class="absolute inset-x-0 -top-[10%] h-[120%]"
-            >
-              <LandingPhoto
-                :name="`scenario-${item.key}`"
-                :alt="t(`photos.${item.key}`)"
-                ratio="h-full"
-              />
-            </div>
-            <div
-              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-              aria-hidden="true"
-            />
-            <div class="absolute inset-x-5 bottom-5 text-white">
-              <LandingMockLogo
-                :name="t(`cases.items.${item.key}.company`)"
-                class="text-xl"
-              />
-              <p class="mt-1 text-xs text-white/75">
-                {{ t(`cases.items.${item.key}.meta`) }}
-              </p>
-            </div>
-          </div>
+          <p class="font-mono text-xs tracking-wider text-ink/50 uppercase">
+            {{ t(`cases.items.${key}.meta`) }}
+          </p>
 
-          <figure class="flex flex-1 flex-col p-7">
-            <span
-              class="font-display text-5xl leading-none text-accent-strong"
-              aria-hidden="true"
-            >&ldquo;</span>
-            <blockquote class="mt-2 flex-1 font-display text-xl leading-snug font-medium tracking-tight text-pretty text-ink">
-              {{ t(`cases.items.${item.key}.quote`) }}
-            </blockquote>
-            <figcaption class="mt-6 flex items-center gap-3">
-              <LandingAvatar
-                :name="t(`cases.items.${item.key}.person`)"
-                size="md"
+          <figure class="mt-7 flex flex-1 flex-col">
+            <figcaption>
+              <!-- 名字就在旁邊，頭像當裝飾，不重複唸 -->
+              <LandingPhoto
+                :name="`portrait-${key}`"
+                alt=""
+                ratio="aspect-square"
+                class="w-36 rounded-2xl sm:w-40"
               />
-              <span>
-                <span class="block text-sm font-semibold text-ink">{{ t(`cases.items.${item.key}.person`) }}</span>
-                <span class="block text-xs text-ink/55">{{ t(`cases.items.${item.key}.role`) }} · {{ t(`cases.items.${item.key}.company`) }}</span>
+              <span class="mt-6 block font-display text-2xl font-medium tracking-tight text-ink">
+                {{ t(`cases.items.${key}.person`) }}
+              </span>
+              <span class="mt-1 block text-sm leading-relaxed text-ink/55">
+                {{ t(`cases.items.${key}.role`) }}<br>@ {{ t(`cases.items.${key}.company`) }}
               </span>
             </figcaption>
-            <dl class="mt-6 grid grid-cols-2 gap-3 border-t border-ink/10 pt-6">
-              <div
-                v-for="m in ['m1', 'm2']"
-                :key="m"
-                class="flex flex-col-reverse"
-              >
-                <dt class="mt-1 text-xs leading-snug text-ink/55">
-                  {{ t(`cases.items.${item.key}.${m}l`) }}
-                </dt>
-                <dd class="font-display text-2xl font-semibold tracking-tight text-ink">
-                  {{ t(`cases.items.${item.key}.${m}v`) }}
-                </dd>
-              </div>
-            </dl>
+            <blockquote class="mt-6 flex-1 text-lg leading-relaxed text-pretty text-ink/80">
+              &ldquo;{{ t(`cases.items.${key}.quote`) }}&rdquo;
+            </blockquote>
           </figure>
+
+          <dl class="mt-8 grid grid-cols-2 gap-3 border-t border-ink/10 pt-6">
+            <div
+              v-for="m in ['m1', 'm2']"
+              :key="m"
+              class="flex flex-col-reverse"
+            >
+              <dt class="mt-1 text-xs leading-snug text-ink/55">
+                {{ t(`cases.items.${key}.${m}l`) }}
+              </dt>
+              <dd class="font-display text-2xl font-semibold tracking-tight text-ink">
+                {{ t(`cases.items.${key}.${m}v`) }}
+              </dd>
+            </div>
+          </dl>
+
+          <LandingMockLogo
+            :name="t(`cases.items.${key}.company`)"
+            class="mt-10 text-2xl text-ink"
+          />
         </li>
       </ul>
 

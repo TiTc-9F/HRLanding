@@ -436,9 +436,6 @@
     "hr": "An HR partner talking with a colleague in the office",
     "manager": "A manager discussing plans with the team at a whiteboard",
     "employee": "An employee focused at their desk",
-    "leader": "Leaders reviewing data together in a meeting",
-    "global": "Colleagues in two offices meeting over a video call",
-    "tech": "Two engineers reviewing code together on a screen",
-    "growth": "A new hire's first day, being shown around by a colleague"
+    "leader": "Leaders reviewing data together in a meeting"
   }
 }
