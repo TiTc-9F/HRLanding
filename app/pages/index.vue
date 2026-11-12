@@ -1,11 +1,19 @@
 <template>
   <div>
     <LandingHeader />
-    <main>
+    <main
+      id="main"
+      tabindex="-1"
+      class="outline-none"
+    >
       <LandingHero />
-      <LandingFeatures />
-      <LandingModules />
-      <LandingStats />
+      <LandingMarquee />
+      <LandingPeopleBand />
+      <LandingPlatform />
+      <LandingShowcase />
+      <LandingAudience />
+      <LandingTrust />
+      <LandingScenarios />
       <LandingSteps />
       <LandingFaq />
       <LandingCta />

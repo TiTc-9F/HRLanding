@@ -1,22 +1,95 @@
 @import "tailwindcss";
 
-/* 設計 token：拿到設計稿後，改這裡的顏色和字型即可套用到全站 */
+/* 設計 token：顏色、字型、動態都在這裡定義，元件只用這些名稱，不寫色碼。
+   色調對齊 hr-system 用的 frappe-ui：無彩度的中性灰（數值取自 frappe-ui 的 surface／ink／outline），
+   主要按鈕與深色區塊用近黑色，顏色只留一個暖橘做小面積重點 */
 @theme {
   --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #eef4ff;
-  --color-brand-100: #dbe6fe;
-  --color-brand-200: #bfd3fe;
-  --color-brand-300: #93b4fd;
-  --color-brand-400: #608bfa;
-  --color-brand-500: #3b65f5;
-  --color-brand-600: #2546ea;
-  --color-brand-700: #1d35d7;
-  --color-brand-800: #1e2eae;
-  --color-brand-900: #1e2d89;
-  --color-brand-950: #171d54;
+  /* 文字、主要按鈕、深色區塊（frappe-ui ink-gray-9） */
+  --color-ink: oklch(0.168 0 0);
+  /* 深色區塊上的卡片（frappe-ui surface-gray-10） */
+  --color-ink-soft: oklch(0.205 0 0);
+  /* 頁面底色（frappe-ui surface-gray-1） */
+  --color-paper: oklch(0.979 0 0);
+  /* 淺灰底：標籤、圖示底、按鈕 hover（frappe-ui surface-gray-3） */
+  --color-mist: oklch(0.946 0 0);
+
+  /* 暖橘重點：只用在小面積的標示（圓點、標籤、草稿狀態），不當按鈕底色 */
+  --color-ember-300: oklch(0.86 0.08 50);
+  --color-ember-400: oklch(0.74 0.15 45);
+  --color-ember-500: oklch(0.66 0.18 40);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* 中文標題優先在標點處換行（避免「每／一步」這種斷法），真的放不下才在字中間換 */
+:lang(zh) :is(h1, h2, h3) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 捲動進場：只有 JS 判斷「元素還在畫面下方、使用者沒關動態」時才加上 .reveal，
+   沒有 JS、預先產生的 HTML、或開啟減少動態時，內容一律直接顯示 */
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition:
+    opacity 0.8s var(--ease-out-expo),
+    transform 0.8s var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* 分頁切換時內容輕微上移淡入（只在 motion-safe 時套用） */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+}
+
+/* 跑馬燈：滑鼠移上去或鍵盤聚焦時暫停；減少動態時改成一般換行清單 */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .marquee-clone {
+    display: none;
+  }
+}
+

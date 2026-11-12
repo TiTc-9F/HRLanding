@@ -1,38 +1,40 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const steps = ['discovery', 'setup', 'training']
+const steps = ['discovery', 'setup', 'launch']
 </script>
 
 <template>
   <section
     id="steps"
-    class="scroll-mt-16 py-24"
+    class="bg-white py-24 sm:py-32"
+    aria-labelledby="steps-title"
   >
-    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <LandingContainer>
       <LandingSectionHeading
+        id="steps-title"
+        :index="t('steps.index')"
         :eyebrow="t('steps.eyebrow')"
         :title="t('steps.title')"
         :description="t('steps.description')"
       />
 
-      <ol class="mt-16 grid gap-8 md:grid-cols-3">
+      <ol class="mt-16 grid gap-px overflow-hidden rounded-3xl bg-ink/10 md:grid-cols-3">
         <li
-          v-for="(step, index) in steps"
+          v-for="(step, i) in steps"
           :key="step"
-          class="relative rounded-2xl border border-slate-200 p-8"
+          v-reveal="i"
+          class="bg-white p-8 sm:p-10"
         >
-          <span class="text-5xl font-bold text-brand-100">
-            {{ String(index + 1).padStart(2, '0') }}
-          </span>
-          <h3 class="mt-4 text-xl font-semibold text-slate-900">
+          <span class="font-mono text-sm font-semibold text-ink">0{{ i + 1 }}</span>
+          <h3 class="mt-10 text-2xl font-bold tracking-tight text-ink">
             {{ t(`steps.items.${step}.title`) }}
           </h3>
-          <p class="mt-2 leading-relaxed text-slate-600">
+          <p class="mt-3 leading-relaxed text-pretty text-ink/65">
             {{ t(`steps.items.${step}.desc`) }}
           </p>
         </li>
       </ol>
-    </div>
+    </LandingContainer>
   </section>
 </template>

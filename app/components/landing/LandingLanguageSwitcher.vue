@@ -14,19 +14,13 @@ const current = computed({
 <template>
   <label class="relative flex items-center">
     <span class="sr-only">{{ t('nav.language') }}</span>
-    <svg
-      class="pointer-events-none absolute left-2.5 size-4 text-slate-500"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.6"
-      aria-hidden="true"
-    >
-      <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.5-2.4 3.75-5.4 3.75-9S14.5 5.4 12 3m0 18c-2.5-2.4-3.75-5.4-3.75-9S9.5 5.4 12 3M3.5 9h17M3.5 15h17" />
-    </svg>
+    <LandingIcon
+      name="globe"
+      class="pointer-events-none absolute left-3 size-4 text-ink/60"
+    />
     <select
       v-model="current"
-      class="cursor-pointer appearance-none rounded-full border border-slate-300 bg-white py-1.5 pr-3 pl-8 text-sm text-slate-700 transition hover:border-brand-300 focus:border-brand-500 focus:outline-none"
+      class="min-h-11 cursor-pointer appearance-none rounded-full border border-ink/15 bg-white/70 py-2 pr-4 pl-9 text-sm font-medium text-ink transition-colors hover:border-ink/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
     >
       <option
         v-for="item in locales"

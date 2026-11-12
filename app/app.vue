@@ -18,7 +18,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="bg-white font-sans text-slate-700 antialiased">
+  <div class="min-h-dvh bg-paper font-sans text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only z-[60] rounded-full bg-ink px-5 py-3 font-semibold text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+    >
+      {{ t('nav.skip') }}
+    </a>
     <NuxtRouteAnnouncer />
     <NuxtPage />
   </div>

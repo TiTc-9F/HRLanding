@@ -2,44 +2,54 @@
 const { site } = useAppConfig()
 const { t } = useI18n()
 
-const mailto = computed(() =>
-  `mailto:${site.contactEmail}?subject=${encodeURIComponent(t('cta.mailSubject', { name: site.productName }))}`,
-)
+const mailto = (subject: string) =>
+  `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}`
+
+const demoHref = computed(() => mailto(t('cta.mailSubject', { name: site.productName })))
+const salesHref = computed(() => mailto(t('cta.salesSubject', { name: site.productName })))
 </script>
 
 <template>
   <section
     id="contact"
-    class="scroll-mt-16 py-24"
+    class="relative isolate overflow-hidden bg-ink py-24 text-white sm:py-36"
+    aria-labelledby="cta-title"
   >
-    <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 px-6 py-16 text-center text-white sm:px-16">
-        <div class="absolute -top-24 -right-24 size-72 rounded-full bg-white/10 blur-2xl" />
-        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          {{ t('cta.title') }}
-        </h2>
-        <p class="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-          {{ t('cta.description') }}
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            :href="mailto"
-            class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-brand-700 shadow-lg transition hover:bg-brand-50"
-          >
-            <LandingIcon
-              name="mail"
-              class="size-5"
-            />
-            {{ t('cta.button') }}
-          </a>
-          <a
-            :href="`mailto:${site.contactEmail}`"
-            class="rounded-full border border-white/40 px-6 py-3 font-medium text-white transition hover:bg-white/10"
-          >
-            {{ site.contactEmail }}
-          </a>
-        </div>
+    <LandingContainer class="text-center">
+      <LandingEyebrow
+        :label="t('cta.eyebrow')"
+        dark
+        class="justify-center"
+      />
+      <h2
+        id="cta-title"
+        class="mx-auto mt-6 max-w-4xl text-[clamp(2.25rem,6vw,5rem)] leading-[1.05] font-extrabold tracking-[-0.03em] text-balance"
+      >
+        {{ t('cta.title', { name: site.productName }) }}
+      </h2>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-white/70">
+        {{ t('cta.description') }}
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <LandingButton
+          :href="demoHref"
+          variant="light"
+          size="lg"
+          icon="arrow"
+        >
+          {{ t('cta.primary') }}
+        </LandingButton>
+        <LandingButton
+          :href="salesHref"
+          variant="ghost-light"
+          size="lg"
+        >
+          {{ t('cta.secondary') }}
+        </LandingButton>
       </div>
-    </div>
+      <p class="mt-6 text-sm text-white/50">
+        {{ site.contactEmail }}
+      </p>
+    </LandingContainer>
   </section>
 </template>

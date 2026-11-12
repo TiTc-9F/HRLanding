@@ -1,172 +1,398 @@
 {
   "meta": {
-    "title": "{name} – Platform HR all-in-one",
-    "description": "Dari onboarding, absensi, cuti hingga penggajian, jalankan semua proses HR dalam satu platform dan beri tim HR Anda lebih banyak waktu untuk orang-orangnya."
+    "title": "{name} | Administrasi HR dan pengembangan talenta dalam satu platform",
+    "description": "Dari onboarding, absensi, dan penggajian hingga penilaian kinerja, penilaian teknis, dan promosi, {name} menyatukan administrasi HR dan pengembangan talenta sesuai kebijakan perusahaan Anda."
   },
   "nav": {
-    "features": "Fitur",
-    "modules": "Modul",
-    "steps": "Cara kerja",
+    "platform": "Platform",
+    "showcase": "Keunggulan",
+    "audience": "Peran",
+    "trust": "Keamanan",
     "faq": "FAQ",
     "bookDemo": "Jadwalkan demo",
-    "language": "Bahasa"
+    "language": "Bahasa",
+    "menu": "Buka menu",
+    "close": "Tutup menu",
+    "skip": "Langsung ke konten utama",
+    "home": "Beranda {name}"
   },
   "hero": {
-    "badge": "Platform HR all-in-one",
-    "titleLine1": "Lebih sedikit administrasi.",
-    "titleLine2": "Lebih banyak waktu untuk orang.",
-    "description": "Dari onboarding, absensi, cuti hingga penggajian, {name} menyatukan proses HR yang tersebar ke dalam satu platform, mengotomatiskan pekerjaan berulang, dan memberi manajer gambaran organisasi secara real-time.",
-    "primary": "Jadwalkan demo gratis",
-    "secondary": "Lihat fitur",
-    "highlights": {
-      "cloud": "Berbasis cloud, tanpa instalasi",
-      "compliance": "Sesuai peraturan ketenagakerjaan lokal",
-      "onboarding": "Pendampingan implementasi"
+    "eyebrow": "Administrasi HR × Pengembangan talenta",
+    "title1": "Dari absen masuk hingga promosi.",
+    "title2": "Satu platform",
+    "title3": "untuk melihat setiap orang bertumbuh.",
+    "description": "Onboarding, absensi, cuti, dan penggajian, ditambah penilaian kinerja, penilaian teknis, promosi, dan masa percobaan. {name} menyatukan administrasi HR dan pengembangan talenta, mengikuti kebijakan perusahaan Anda, dan meneruskan setiap tahap ke orang yang tepat.",
+    "primary": "Jadwalkan demo",
+    "secondary": "Lihat platform",
+    "askLabel": "Mau mulai dari mana?",
+    "asks": {
+      "configure": "Perlu coding untuk jenis penilaian baru?",
+      "routing": "Siapa yang menyetujui apa?",
+      "payroll": "Bagaimana absensi masuk ke penggajian?",
+      "trust": "Siapa yang bisa melihat data?"
     }
   },
-  "dashboard": {
-    "checkedIn": "Sudah absen",
-    "pendingLeave": "Cuti tertunda",
-    "pendingLeaveSub": "pengajuan",
-    "newHires": "Karyawan baru",
-    "newHiresSub": "bulan ini",
-    "attendanceWeek": "Kehadiran minggu ini",
-    "annualLeave": "Cuti tahunan · 1h",
-    "overtime": "Lembur · 3j",
-    "sickLeave": "Cuti sakit · 0,5h",
-    "approve": "Setujui",
-    "payrollDone": "Penggajian selesai",
-    "payrollDetail": "✓ 135 karyawan · 2 menit"
+  "heroVisual": {
+    "label": "Pratinjau produk",
+    "reviewTitle": "Penilaian kinerja H2 2026",
+    "reviewMeta": "R&D · 48 orang",
+    "stepSelf": "Penilaian diri",
+    "stepLead": "Penilaian team lead",
+    "stepHead": "Penilaian kepala departemen",
+    "done": "Selesai",
+    "inProgress": "Berjalan",
+    "waiting": "Menunggu",
+    "progress": "Progres keseluruhan",
+    "clockIn": "Absen masuk",
+    "clockInStatus": "Tercatat · Wi-Fi",
+    "leaveTitle": "Cuti menunggu persetujuan",
+    "leaveCount": "3 pengajuan",
+    "promotion": "Promosi disetujui",
+    "promotionDetail": "Grade 7 → 8, diperbarui otomatis"
   },
-  "features": {
-    "eyebrow": "Fitur",
-    "title": "Semua pekerjaan HR dalam satu platform",
-    "description": "Serahkan pekerjaan administrasi yang berulang kepada sistem agar tim HR bisa fokus pada hal terpenting: orang.",
+  "marquee": {
+    "label": "Pekerjaan HR yang dicakup platform",
     "items": {
+      "records": "Data karyawan",
+      "onboarding": "Onboarding",
+      "attendance": "Absensi",
+      "shifts": "Jadwal shift",
+      "leave": "Cuti dan lembur",
+      "payroll": "Penggajian",
+      "performance": "Penilaian kinerja",
+      "technical": "Penilaian teknis",
+      "promotion": "Promosi",
+      "probation": "Masa percobaan",
+      "checkin": "1-on-1",
+      "idp": "Rencana pengembangan",
+      "letters": "Surat rekomendasi",
+      "audit": "Jejak audit",
+      "reports": "Laporan"
+    }
+  },
+  "peopleBand": {
+    "quote": "Biarkan sistem menjalankan proses. Luangkan waktu untuk manusia."
+  },
+  "platform": {
+    "index": "01",
+    "eyebrow": "Platform",
+    "title": "Administrasi HR dan pengembangan talenta, akhirnya di satu tempat.",
+    "description": "Data karyawan cukup dikelola sekali. Absensi dan penggajian memakainya, begitu juga penilaian dan promosi. Saat struktur organisasi berubah, persetujuan dan penilaian ikut menyesuaikan.",
+    "tiles": {
       "records": {
         "title": "Data karyawan",
-        "desc": "Simpan profil, kontrak, dan riwayat jabatan di satu tempat dengan akses berbasis peran, bukan di spreadsheet yang tersebar."
+        "desc": "Kontrak, grade, dan perubahan jabatan punya tanggal berlaku, jadi status siapa pun pada tanggal tertentu bisa dilihat."
       },
       "attendance": {
         "title": "Absensi",
-        "desc": "Absen lewat GPS ponsel atau Wi-Fi, dicocokkan otomatis dengan jadwal, dan dapatkan peringatan saat ada anomali."
+        "desc": "Absen lewat GPS atau Wi-Fi. Keterlambatan, pulang cepat, dan lembur dicocokkan dengan jadwal shift."
       },
       "leave": {
-        "title": "Cuti & lembur",
-        "desc": "Pengajuan online dengan persetujuan bertingkat, perhitungan cuti tahunan otomatis, dan saldo cuti yang bisa dicek sendiri."
+        "title": "Persetujuan cuti",
+        "desc": "Persetujuan bertingkat, cuti tahunan sesuai masa kerja, dan sisa cuti bisa dicek sendiri oleh karyawan."
       },
       "payroll": {
         "title": "Penggajian",
-        "desc": "Data absensi dan cuti langsung masuk, asuransi dan pajak dihitung otomatis, dan slip gaji terbit dengan satu klik."
+        "desc": "Absensi dan cuti langsung masuk, dengan asuransi, pensiun, dan pajak penghasilan dihitung seketika."
       },
-      "reports": {
-        "title": "Laporan & analitik",
-        "desc": "Dasbor real-time untuk biaya tenaga kerja, turnover, dan kehadiran, sehingga keputusan didukung data."
+      "review": {
+        "title": "Penilaian kinerja dan teknis",
+        "desc": "Penilaian diri, penilaian atasan, dan skor penilai berdampingan, dengan grade dihitung sesuai aturan Anda.",
+        "chip1": "Penilaian diri",
+        "chip2": "Team lead",
+        "chip3": "Penilai"
       },
-      "security": {
-        "title": "Keamanan & kepatuhan",
-        "desc": "Enkripsi saat transit dan saat disimpan, serta log audit lengkap, sesuai regulasi privasi dan ketenagakerjaan."
+      "promotion": {
+        "title": "Promosi",
+        "desc": "Pengajuan, persetujuan atasan, jadwal panel, dan hasil. Grade yang disetujui diperbarui otomatis."
+      },
+      "probation": {
+        "title": "Masa percobaan",
+        "desc": "Dibuka otomatis dari tanggal mulai kerja, pengingat di hari ke-65, dan keputusan dalam 100 hari."
+      },
+      "growth": {
+        "title": "1-on-1 dan rencana pengembangan",
+        "desc": "Catatan pertemuan, rencana pengembangan, dan surat rekomendasi dalam satu riwayat pertumbuhan."
+      },
+      "insights": {
+        "title": "Laporan",
+        "desc": "Corong progres siklus, distribusi grade, absensi, dan biaya tenaga kerja dalam grafik langsung."
+      }
+    },
+    "stats": {
+      "templates": {
+        "value": "11",
+        "label": "templat penilaian siap pakai"
+      },
+      "code": {
+        "value": "0",
+        "label": "baris kode untuk menambah jenis penilaian"
+      },
+      "record": {
+        "value": "1",
+        "label": "data karyawan untuk seluruh platform"
       }
     }
   },
-  "modules": {
-    "eyebrow": "Modul",
-    "title": "Alur kerja HR untuk bisnis yang berkembang",
-    "description": "Dirancang sesuai cara tim bekerja, sehingga semua orang produktif sejak hari pertama.",
-    "screenshot": "Tangkapan layar {label}",
+  "showcase": {
+    "index": "02",
+    "eyebrow": "Keunggulan",
+    "title": "Kebijakan milik Anda, sistem yang mengikutinya.",
+    "learnMore": "Lihat langsung di demo",
     "items": {
-      "attendance": {
-        "label": "Absensi",
-        "title": "Absen, jadwal shift, dan peringatan serba otomatis",
-        "desc": "Karyawan absen dari ponsel, sistem menandai keterlambatan, pulang cepat, dan lembur sesuai jadwal, lalu manajer langsung diberi tahu. Tidak perlu rekap manual di akhir bulan.",
+      "configure": {
+        "label": "Penilaian yang bisa diatur",
+        "title": "Tambah jenis penilaian baru tanpa menunggu engineer.",
+        "desc": "Atur tahapan, pertanyaan, kelayakan, dan siapa yang bisa melihat di konsol admin. Saat mengubah alur, pratinjau langsung menunjukkan siapa yang akan menerima setiap tahap. Perubahan pertanyaan disimpan sebagai draf dan berlaku untuk siklus baru setelah diterbitkan.",
         "points": {
-          "p1": "Absen via GPS, Wi-Fi, dan IP",
-          "p2": "Jam kerja fleksibel dan shift bergilir",
-          "p3": "Peringatan anomali otomatis ke manajer"
+          "p1": "Atur tahapan, penanggung jawab, dan tenggat",
+          "p2": "Pertanyaan berversi, penilaian yang berjalan tidak terpengaruh",
+          "p3": "Mulai dari kosong atau salin templat yang ada"
         }
       },
-      "leave": {
-        "label": "Persetujuan cuti",
-        "title": "Persetujuan yang tidak pernah macet",
-        "desc": "Atur alur persetujuan bertingkat, simpan jejak lengkap dari pengajuan hingga persetujuan, dan biarkan karyawan mengecek saldo cuti yang dihitung otomatis.",
+      "routing": {
+        "label": "Penugasan otomatis",
+        "title": "Setiap tahap sampai ke orang yang bertanggung jawab.",
+        "desc": "Atasan langsung, atasan dua tingkat, penilai pilihan karyawan, satu formulir per rekan kerja. Atur aturannya sekali, sistem menugaskan orang berdasarkan struktur organisasi. Setelah reorganisasi, tahap yang belum dikirim ditugaskan ulang.",
         "points": {
-          "p1": "Tahap persetujuan per departemen",
-          "p2": "Cuti tahunan sesuai masa kerja",
-          "p3": "Setujui di mana saja lewat notifikasi"
+          "p1": "Menemukan atasan dari struktur organisasi, termasuk posisi kosong dan pelaksana tugas",
+          "p2": "Karyawan bisa memilih penilainya, masing-masing menilai terpisah",
+          "p3": "Reorganisasi menugaskan ulang tahap terbuka, yang sudah dikirim tetap"
         }
       },
       "payroll": {
-        "label": "Penggajian",
-        "title": "Dari absensi ke slip gaji dalam satu klik",
-        "desc": "Data absensi, cuti, dan lembur langsung masuk ke penggajian. Asuransi, dana pensiun, dan pajak dihitung seketika, lalu slip gaji digital dikirim ke setiap karyawan.",
+        "label": "Absensi ke penggajian",
+        "title": "Dari absen hingga gajian, data dimasukkan sekali saja.",
+        "desc": "Absensi, cuti, dan lembur masuk ke penggajian secara otomatis. Asuransi, pensiun, dan pajak penghasilan dihitung seketika, dan slip gaji digital langsung dikirim ke karyawan.",
         "points": {
-          "p1": "Tarif asuransi selalu diperbarui",
-          "p2": "File transfer bank dengan satu klik",
-          "p3": "Slip gaji digital terenkripsi"
+          "p1": "Absen lewat GPS dan Wi-Fi dengan shift fleksibel",
+          "p2": "Cuti tahunan sesuai masa kerja",
+          "p3": "File transfer bank dalam satu klik"
+        }
+      }
+    },
+    "mock": {
+      "configureTitle": "Jenis penilaian: Kinerja",
+      "draft": "Draf",
+      "stepsLabel": "Tahapan",
+      "self": "Penilaian diri",
+      "selfWho": "Karyawan",
+      "lead": "Penilaian team lead",
+      "leadWho": "Team lead langsung",
+      "head": "Penilaian kepala departemen",
+      "headWho": "Kepala departemen",
+      "preview": "Pratinjau",
+      "previewFor": "Pratinjau untuk Mia Chen",
+      "routingTitle": "Penilaian teknis Mia Chen",
+      "routingSelf": "Penilaian diri dan pilih penilai",
+      "routingReviewer": "Skor penilai",
+      "routingReviewerWho": "Dipilih karyawan · 2",
+      "routingHead": "Persetujuan kepala departemen",
+      "orgChange": "Perubahan organisasi: Ava Lin kini kepala departemen. Tahap terbuka telah ditugaskan ulang.",
+      "payrollTitle": "Penggajian November",
+      "payrollEmployees": "135 orang",
+      "attendanceRow": "Absensi dan lembur",
+      "leaveRow": "Potongan cuti",
+      "insuranceRow": "Asuransi dan pensiun",
+      "taxRow": "Pajak penghasilan",
+      "synced": "Terimpor",
+      "calculated": "Terhitung",
+      "payslips": "Kirim slip gaji"
+    }
+  },
+  "audience": {
+    "index": "03",
+    "eyebrow": "Peran",
+    "title": "Satu platform, setiap orang melihat yang mereka butuhkan.",
+    "todayLabel": "Tugas hari ini",
+    "tabs": {
+      "hr": {
+        "label": "HR",
+        "title": "Pantau progres setiap siklus",
+        "desc": "Buka siklus, atur kelayakan, kirim pengingat, dan ekspor, lalu lihat siapa yang tertahan di tahap mana dalam satu halaman.",
+        "points": {
+          "p1": "Corong progres dan pengingat sekali klik",
+          "p2": "Bisa memegang sebagian jenis penilaian saja, misalnya penilaian kinerja",
+          "p3": "Ekspor Excel dengan riwayat akses tetap tersimpan"
+        },
+        "tasks": {
+          "t1": "Ingatkan: 12 orang belum menyelesaikan penilaian diri",
+          "t2": "Setujui: hasil masa percobaan 3 karyawan baru",
+          "t3": "Buka: penilaian teknis H1 2027"
+        }
+      },
+      "manager": {
+        "label": "Atasan",
+        "title": "Semua tugas terlihat, penilaian punya dasar",
+        "desc": "Penilaian diri, masukan rekan, dan target periode lalu ditampilkan berdampingan, jadi Anda bisa membaca dulu sebelum menilai.",
+        "points": {
+          "p1": "Tugas diurutkan menurut tenggat",
+          "p2": "Penilaian diri dan skor Anda berdampingan",
+          "p3": "Kembalikan atau tugaskan ulang, semua tahap tercatat"
+        },
+        "tasks": {
+          "t1": "Nilai: penilaian kinerja Mia Chen",
+          "t2": "Setujui: cuti tahunan 2 hari Noah Wu",
+          "t3": "Temui: 1-on-1 dengan Emma Hsu"
+        }
+      },
+      "employee": {
+        "label": "Karyawan",
+        "title": "Selalu tahu langkah berikutnya",
+        "desc": "Penilaian diri, memilih penilai, pengajuan promosi, cuti, dan absensi ada di satu tempat, dan hasil langsung terlihat saat sudah siap.",
+        "points": {
+          "p1": "Isi formulir dan absen dari ponsel",
+          "p2": "Cek sisa cuti kapan saja",
+          "p3": "Semua hasil penilaian sebelumnya dalam sekejap"
+        },
+        "tasks": {
+          "t1": "Isi: penilaian diri periode ini (sisa 3 hari)",
+          "t2": "Pilih: 2 penilai teknis",
+          "t3": "Lihat: hasil periode lalu"
+        }
+      },
+      "leader": {
+        "label": "Manajemen",
+        "title": "Lihat talenta dan organisasi lewat angka",
+        "desc": "Distribusi grade, tingkat kelulusan promosi, absensi, dan biaya tenaga kerja, agar keputusan berbasis data.",
+        "points": {
+          "p1": "Distribusi grade dibandingkan antardepartemen",
+          "p2": "Tren biaya tenaga kerja dan turnover",
+          "p3": "Riwayat lengkap perubahan grade dan jabatan"
+        },
+        "tasks": {
+          "t1": "Tinjau: distribusi grade per divisi",
+          "t2": "Bandingkan: tingkat kelulusan promosi 3 periode terakhir",
+          "t3": "Pantau: biaya tenaga kerja kuartal ini"
         }
       }
     }
   },
-  "stats": {
-    "customers": "Pelanggan bisnis",
-    "timeSaved": "Hemat waktu administrasi HR",
-    "uptime": "Uptime sistem",
-    "onboardingValue": "7 hari",
-    "onboarding": "Rata-rata waktu implementasi",
-    "note": "* Angka contoh. Ganti sebelum peluncuran."
+  "trust": {
+    "index": "04",
+    "eyebrow": "Keamanan",
+    "title": "Siapa bisa melihat apa, jelas di setiap tahap.",
+    "description": "Data HR sangat sensitif. {name} memeriksa izin di server untuk setiap tindakan, bukan sekadar menyembunyikan tombol di layar.",
+    "items": {
+      "roles": {
+        "title": "Izin berlapis",
+        "desc": "Admin platform, HR penanggung jawab tiap jenis penilaian, atasan, dan karyawan masing-masing hanya melihat yang perlu."
+      },
+      "visibility": {
+        "title": "Visibilitas yang bisa diatur",
+        "desc": "Tentukan kapan karyawan bisa melihat tiap penilaian. Misalnya catatan 1-on-1 terlihat setelah dikirim, dan rencana pengembangan tidak terlihat oleh karyawan."
+      },
+      "audit": {
+        "title": "Jejak audit lengkap",
+        "desc": "Setiap akses dan perubahan tercatat: siapa, kapan, dan data yang mana."
+      },
+      "encryption": {
+        "title": "Enkripsi dan cadangan",
+        "desc": "Data dienkripsi saat dikirim dan disimpan, dengan cadangan harian."
+      }
+    }
+  },
+  "scenarios": {
+    "index": "05",
+    "eyebrow": "Skenario",
+    "title": "Gabungkan alur yang cocok untuk organisasi Anda.",
+    "note": "Berikut contoh skenario penerapan, bukan studi kasus pelanggan.",
+    "items": {
+      "global": {
+        "tag": "Tim lintas negara",
+        "title": "Satu kebijakan untuk dua kantor",
+        "desc": "Pertanyaan tetap berbahasa Inggris, antarmuka mengikuti bahasa tiap pengguna. HR di tiap kantor hanya mengelola karyawannya sendiri."
+      },
+      "tech": {
+        "tag": "Berbasis engineering",
+        "title": "Penilaian teknis yang langsung terhubung ke promosi",
+        "desc": "Karyawan memilih penilai senior yang menilai terpisah, hasilnya menjadi dasar promosi, dan grade yang disetujui diperbarui otomatis."
+      },
+      "growth": {
+        "tag": "Bertumbuh cepat",
+        "title": "Masa percobaan dimulai sejak hari pertama",
+        "desc": "Penilaian masa percobaan dibuka dari tanggal mulai kerja, check-in mingguan mengumpulkan masukan tim, dan keputusan dibuat sebelum hari ke-100."
+      }
+    }
   },
   "steps": {
-    "eyebrow": "Cara kerja",
-    "title": "Ganti sistem dalam tiga langkah mudah",
-    "description": "Konsultan khusus mendampingi Anda dari awal hingga akhir, tanpa perlu tim IT.",
+    "index": "06",
+    "eyebrow": "Implementasi",
+    "title": "Tiga langkah menuju sistem baru.",
+    "description": "Konsultan khusus mendampingi dari awal hingga akhir, jadi Anda bisa go-live tanpa tim IT.",
     "items": {
       "discovery": {
-        "title": "Diskusi kebutuhan",
-        "desc": "Konsultan mempelajari struktur organisasi, shift, dan aturan gaji Anda, lalu merekomendasikan rencana implementasi."
+        "title": "Analisis kebutuhan",
+        "desc": "Kami mempelajari organisasi, shift, aturan gaji, dan kebijakan penilaian Anda, lalu menyarankan rencana penerapan."
       },
       "setup": {
-        "title": "Impor data & pengaturan",
-        "desc": "Kami mengimpor data karyawan serta mengatur alur persetujuan dan komponen gaji sesuai kebijakan Anda."
+        "title": "Impor data dan pengaturan",
+        "desc": "Kami mengimpor karyawan dan struktur organisasi, lalu mengatur alur persetujuan, komponen gaji, dan templat penilaian."
       },
-      "training": {
-        "title": "Pelatihan & go-live",
-        "desc": "Pelatihan langsung untuk HR dan manajer, dengan dukungan berkelanjutan setelah peluncuran."
+      "launch": {
+        "title": "Pelatihan dan go-live",
+        "desc": "Kami melatih HR dan para atasan, dan terus mendukung setelah peluncuran."
       }
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Pertanyaan yang sering diajukan",
+    "title": "Masih ada pertanyaan?",
     "items": {
-      "install": {
-        "q": "Apakah saya perlu menginstal software atau menyiapkan server?",
-        "a": "Tidak. Ini layanan cloud yang bisa diakses dari browser atau aplikasi seluler kami, dan semua pembaruan kami tangani."
+      "modules": {
+        "q": "Bisakah kami memakai sebagian platform saja?",
+        "a": "Bisa. Administrasi HR dan pengembangan talenta dapat diterapkan terpisah dan diperluas nanti, dengan data karyawan yang sama."
       },
       "customize": {
-        "q": "Apakah bisa disesuaikan dengan kebijakan perusahaan kami?",
-        "a": "Ya. Shift, jenis cuti, alur persetujuan, dan komponen gaji semuanya dapat diatur, dan konsultan kami siap membantu kebutuhan khusus."
+        "q": "Bisakah alur dan pertanyaan penilaian mengikuti kebijakan kami?",
+        "a": "Bisa. Tahapan, penanggung jawab, pertanyaan, kelayakan, dan visibilitas tiap jenis penilaian diatur di konsol admin, dan menambah jenis baru tidak perlu coding."
+      },
+      "install": {
+        "q": "Apakah perlu memasang software atau server?",
+        "a": "Tidak. Masuk lewat browser atau ponsel, dan pembaruan kami yang urus."
       },
       "migrate": {
         "q": "Bisakah data dari sistem lama dipindahkan?",
-        "a": "Bisa. Kami menyediakan template impor Excel, dan konsultan akan membantu memeriksa serta mengonversi data Anda."
+        "a": "Bisa. Kami menyediakan templat impor, dan konsultan membantu memeriksa serta mengonversi data yang ada."
       },
       "security": {
         "q": "Bagaimana data kami dilindungi?",
-        "a": "Data dienkripsi saat transit dan saat disimpan, dengan backup harian, kontrol akses berbasis peran, dan log audit lengkap."
+        "a": "Setiap tindakan diperiksa izinnya di server, data dienkripsi saat dikirim dan disimpan, dan setiap akses serta perubahan tercatat di jejak audit."
       },
       "pricing": {
         "q": "Bagaimana harga dihitung?",
-        "a": "Harga berdasarkan jumlah karyawan dan modul. Jadwalkan demo dan kami akan menyiapkan penawaran sesuai kebutuhan Anda."
+        "a": "Berdasarkan jumlah pengguna dan modul. Jadwalkan demo dan kami akan menyiapkan penawaran sesuai kebutuhan Anda."
       }
     }
   },
   "cta": {
-    "title": "Siap membuat pekerjaan HR lebih mudah?",
-    "description": "Jadwalkan demo online 30 menit. Konsultan akan memandu Anda menjelajahi produk sesuai kebutuhan dan memberi saran implementasi.",
-    "button": "Jadwalkan demo",
-    "mailSubject": "Permintaan demo {name}"
+    "eyebrow": "Mulai sekarang",
+    "title": "Lihat bagaimana {name} cocok dengan cara kerja Anda.",
+    "description": "Jadwalkan demo online 30 menit. Konsultan akan memperagakan sesuai organisasi dan proses Anda, serta memberi saran penerapan.",
+    "primary": "Jadwalkan demo",
+    "secondary": "Hubungi sales",
+    "mailSubject": "Jadwalkan demo {name}",
+    "salesSubject": "Pertanyaan tentang paket {name}"
   },
   "footer": {
+    "tagline": "Administrasi HR dan pengembangan talenta dalam satu platform.",
+    "product": "Produk",
+    "company": "Selengkapnya",
+    "contact": "Kontak",
     "rights": "Hak cipta dilindungi."
+  },
+  "photos": {
+    "hero": "Seorang atasan dan anggota tim berbincang empat mata di ruang rapat yang terang",
+    "band": "Rekan kerja berdiskusi santai mengelilingi meja",
+    "configure": "Staf HR menyiapkan alur penilaian di laptop",
+    "routing": "Team lead meninjau masukan penilaian bersama dua rekan",
+    "payroll": "Karyawan tiba di pagi hari dan absen lewat ponsel",
+    "hr": "Mitra HR berbicara dengan rekan di kantor",
+    "manager": "Atasan berdiskusi dengan tim di depan papan tulis",
+    "employee": "Karyawan fokus bekerja di mejanya",
+    "leader": "Para pemimpin meninjau data bersama dalam rapat",
+    "global": "Rekan di dua kantor berdiskusi lewat panggilan video",
+    "tech": "Dua engineer meninjau kode bersama di layar",
+    "growth": "Hari pertama karyawan baru, diajak berkeliling oleh rekan"
   }
 }

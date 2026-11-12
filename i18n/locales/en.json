@@ -1,172 +1,398 @@
 {
   "meta": {
-    "title": "{name} – All-in-one HR platform",
-    "description": "From onboarding and attendance to leave and payroll, run every HR process on one platform and give your HR team time back for people."
+    "title": "{name} | Core HR and talent development on one platform",
+    "description": "From onboarding, attendance and payroll to performance reviews, technical reviews and promotions, {name} brings core HR and talent development together, configured around the way your company works."
   },
   "nav": {
-    "features": "Features",
-    "modules": "Modules",
-    "steps": "How it works",
+    "platform": "Platform",
+    "showcase": "Why us",
+    "audience": "Roles",
+    "trust": "Security",
     "faq": "FAQ",
     "bookDemo": "Book a demo",
-    "language": "Language"
+    "language": "Language",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "skip": "Skip to main content",
+    "home": "{name} home"
   },
   "hero": {
-    "badge": "All-in-one HR platform",
-    "titleLine1": "Less paperwork.",
-    "titleLine2": "More time for people.",
-    "description": "From onboarding and attendance to leave and payroll, {name} brings scattered HR processes into one platform, automates the repetitive work, and gives managers a real-time view of their organization.",
-    "primary": "Book a free demo",
-    "secondary": "Explore features",
-    "highlights": {
-      "cloud": "Cloud-based, nothing to install",
-      "compliance": "Built for local labor law",
-      "onboarding": "Guided onboarding"
+    "eyebrow": "Core HR × Talent development",
+    "title1": "From clock-in to promotion.",
+    "title2": "One platform",
+    "title3": "to see everyone grow.",
+    "description": "Onboarding, attendance, leave and payroll, plus performance reviews, technical reviews, promotions and probation. {name} keeps core HR and talent development in one place, follows your own policies, and routes every step to the right person.",
+    "primary": "Book a demo",
+    "secondary": "Explore the platform",
+    "askLabel": "Where would you like to start?",
+    "asks": {
+      "configure": "Does a new review type need code?",
+      "routing": "Who approves what?",
+      "payroll": "How does attendance reach payroll?",
+      "trust": "Who can see the data?"
     }
   },
-  "dashboard": {
-    "checkedIn": "Checked in",
-    "pendingLeave": "Pending leave",
-    "pendingLeaveSub": "requests",
-    "newHires": "New hires",
-    "newHiresSub": "this month",
-    "attendanceWeek": "Attendance this week",
-    "annualLeave": "Annual leave · 1d",
-    "overtime": "Overtime · 3h",
-    "sickLeave": "Sick leave · 0.5d",
-    "approve": "Approve",
-    "payrollDone": "Payroll complete",
-    "payrollDetail": "✓ 135 employees · 2 min"
+  "heroVisual": {
+    "label": "Product preview",
+    "reviewTitle": "H2 2026 performance review",
+    "reviewMeta": "R&D · 48 people",
+    "stepSelf": "Self review",
+    "stepLead": "Team lead review",
+    "stepHead": "Department head review",
+    "done": "Done",
+    "inProgress": "In progress",
+    "waiting": "Waiting",
+    "progress": "Overall progress",
+    "clockIn": "Clock-in",
+    "clockInStatus": "Recorded · Wi-Fi",
+    "leaveTitle": "Leave to approve",
+    "leaveCount": "3 requests",
+    "promotion": "Promotion approved",
+    "promotionDetail": "Grade 7 → 8, updated automatically"
   },
-  "features": {
-    "eyebrow": "Features",
-    "title": "Everything HR does, in one platform",
-    "description": "Hand the repetitive admin work to the system so your HR team can focus on what matters: people.",
+  "marquee": {
+    "label": "HR work the platform covers",
     "items": {
+      "records": "Employee records",
+      "onboarding": "Onboarding",
+      "attendance": "Attendance",
+      "shifts": "Shift planning",
+      "leave": "Leave and overtime",
+      "payroll": "Payroll",
+      "performance": "Performance reviews",
+      "technical": "Technical reviews",
+      "promotion": "Promotions",
+      "probation": "Probation reviews",
+      "checkin": "1-on-1s",
+      "idp": "Development plans",
+      "letters": "Recommendation letters",
+      "audit": "Audit trail",
+      "reports": "Reports"
+    }
+  },
+  "peopleBand": {
+    "quote": "Let the system run the process. Spend the time on people."
+  },
+  "platform": {
+    "index": "01",
+    "eyebrow": "The platform",
+    "title": "Core HR and talent development, finally in the same place.",
+    "description": "Employee data is maintained once. Attendance and payroll use it, and so do reviews and promotions. When the org chart changes, approvals and reviews follow automatically.",
+    "tiles": {
       "records": {
         "title": "Employee records",
-        "desc": "Keep profiles, contracts and job history in one place with role-based access, instead of spreadsheets scattered everywhere."
+        "desc": "Contracts, grades and job changes all carry effective dates, so you can see anyone's status on any given day."
       },
       "attendance": {
-        "title": "Time & attendance",
-        "desc": "Clock in by mobile GPS or Wi-Fi, match against schedules automatically, and get alerts on exceptions."
+        "title": "Attendance",
+        "desc": "Clock in by GPS or Wi-Fi. Late arrivals, early leaves and overtime are checked against the shift plan."
       },
       "leave": {
-        "title": "Leave & overtime",
-        "desc": "Online requests with multi-level approvals, automatic annual leave accrual, and self-service balances."
+        "title": "Leave approvals",
+        "desc": "Multi-level approvals, annual leave granted by seniority, and balances employees can check themselves."
       },
       "payroll": {
         "title": "Payroll",
-        "desc": "Pull in attendance and leave data, calculate insurance and tax automatically, and issue payslips in one click."
+        "desc": "Attendance and leave flow straight in, with insurance, pension and income tax calculated as you go."
       },
-      "reports": {
-        "title": "Reports & analytics",
-        "desc": "Live dashboards for labor cost, turnover and attendance, so decisions are backed by data."
+      "review": {
+        "title": "Performance and technical reviews",
+        "desc": "Self reviews, manager reviews and reviewer scores side by side, with grades worked out by your rules.",
+        "chip1": "Self review",
+        "chip2": "Team lead",
+        "chip3": "Reviewers"
       },
-      "security": {
-        "title": "Security & compliance",
-        "desc": "Encryption in transit and at rest plus full audit logs, aligned with privacy and labor regulations."
+      "promotion": {
+        "title": "Promotions",
+        "desc": "Apply, manager sign-off, panel booking and results. Approved grades update automatically."
+      },
+      "probation": {
+        "title": "Probation reviews",
+        "desc": "Opened automatically from the start date, with a reminder on day 65 and a decision within 100 days."
+      },
+      "growth": {
+        "title": "1-on-1s and development plans",
+        "desc": "Meeting notes, development plans and recommendation letters, all in one growth history."
+      },
+      "insights": {
+        "title": "Reports",
+        "desc": "Cycle progress funnels, grade distribution, attendance and headcount cost in live charts."
+      }
+    },
+    "stats": {
+      "templates": {
+        "value": "11",
+        "label": "review templates, ready to use"
+      },
+      "code": {
+        "value": "0",
+        "label": "lines of code to add a review type"
+      },
+      "record": {
+        "value": "1",
+        "label": "employee record shared across the platform"
       }
     }
   },
-  "modules": {
-    "eyebrow": "Modules",
-    "title": "HR workflows built for growing businesses",
-    "description": "Designed around how teams actually work, so everyone is productive from day one.",
-    "screenshot": "{label} screenshot",
+  "showcase": {
+    "index": "02",
+    "eyebrow": "Why us",
+    "title": "Your policies, and a system that follows them.",
+    "learnMore": "See it in a demo",
     "items": {
-      "attendance": {
-        "label": "Attendance",
-        "title": "Clock-ins, shifts and alerts on autopilot",
-        "desc": "Employees clock in from their phones, the system flags late arrivals, early leaves and overtime against the schedule, and managers are notified instantly. No more month-end reconciliation.",
+      "configure": {
+        "label": "Configurable reviews",
+        "title": "Add a new review type without waiting on engineers.",
+        "desc": "Set the steps, questions, eligibility and visibility in the admin console. While you edit a flow, a live preview shows who each step would go to. Question changes are saved as a draft and apply to new cycles once published.",
         "points": {
-          "p1": "GPS, Wi-Fi and IP-based clock-in",
-          "p2": "Flexible hours and rotating shifts",
-          "p3": "Automatic exception alerts to managers"
+          "p1": "Configure steps, owners and due dates",
+          "p2": "Versioned questions, so reviews in progress stay untouched",
+          "p3": "Start from scratch or copy an existing template"
         }
       },
-      "leave": {
-        "label": "Leave approvals",
-        "title": "Approvals that never get stuck",
-        "desc": "Design multi-level approval flows, keep a full trail from request to approval, and let employees check their own leave balances, calculated automatically.",
+      "routing": {
+        "label": "Automatic routing",
+        "title": "Every step goes to the person who owns it.",
+        "desc": "Direct managers, skip-level managers, reviewers chosen by the employee, one form per peer. Set the rule once and the system assigns people from the org chart. After a reorg, steps that are not yet submitted are reassigned.",
         "points": {
-          "p1": "Approval steps per department",
-          "p2": "Annual leave accrued by seniority",
-          "p3": "Approve on the go with push notifications"
+          "p1": "Finds managers from the org chart, including vacancies and acting heads",
+          "p2": "Employees can choose their reviewers, and each one scores separately",
+          "p3": "Reorgs reassign open steps, submitted ones stay as they are"
         }
       },
       "payroll": {
-        "label": "Payroll",
-        "title": "From timesheet to payslip in one click",
-        "desc": "Attendance, leave and overtime flow straight into payroll. Insurance, pension and tax are calculated instantly, and digital payslips go out to every employee.",
+        "label": "Attendance to payroll",
+        "title": "From clock-in to payday, entered only once.",
+        "desc": "Attendance, leave and overtime flow into payroll automatically. Insurance, pension and income tax are calculated as you go, and digital payslips go straight to employees.",
         "points": {
-          "p1": "Insurance brackets kept up to date",
-          "p2": "Bank transfer files in one click",
-          "p3": "Encrypted digital payslips"
+          "p1": "GPS and Wi-Fi clock-in with flexible shifts",
+          "p2": "Annual leave granted by seniority",
+          "p3": "Bank transfer files in one click"
+        }
+      }
+    },
+    "mock": {
+      "configureTitle": "Review type: Performance",
+      "draft": "Draft",
+      "stepsLabel": "Steps",
+      "self": "Self review",
+      "selfWho": "The employee",
+      "lead": "Team lead review",
+      "leadWho": "Direct team lead",
+      "head": "Department head review",
+      "headWho": "Department head",
+      "preview": "Preview",
+      "previewFor": "Previewing for Mia Chen",
+      "routingTitle": "Mia Chen's technical review",
+      "routingSelf": "Self review and reviewer choice",
+      "routingReviewer": "Reviewer scoring",
+      "routingReviewerWho": "Chosen by employee · 2",
+      "routingHead": "Department head sign-off",
+      "orgChange": "Org change: Ava Lin is now department head. Open steps were reassigned.",
+      "payrollTitle": "November payroll",
+      "payrollEmployees": "135 people",
+      "attendanceRow": "Attendance and overtime",
+      "leaveRow": "Leave deductions",
+      "insuranceRow": "Insurance and pension",
+      "taxRow": "Income tax",
+      "synced": "Imported",
+      "calculated": "Calculated",
+      "payslips": "Send payslips"
+    }
+  },
+  "audience": {
+    "index": "03",
+    "eyebrow": "Roles",
+    "title": "One platform, and everyone sees what they need.",
+    "todayLabel": "Today's to-dos",
+    "tabs": {
+      "hr": {
+        "label": "HR",
+        "title": "Know where every cycle stands",
+        "desc": "Open cycles, set eligibility, send reminders and export, and see who is stuck at which step on one page.",
+        "points": {
+          "p1": "Progress funnel and one-click reminders",
+          "p2": "Own only some review types, such as performance reviews",
+          "p3": "Excel exports that keep the view history"
+        },
+        "tasks": {
+          "t1": "Remind: 12 people haven't finished their self review",
+          "t2": "Approve: probation results for 3 new hires",
+          "t3": "Open: H1 2027 technical review"
+        }
+      },
+      "manager": {
+        "label": "Managers",
+        "title": "All your to-dos, and the context to score fairly",
+        "desc": "Self reviews, peer feedback and last cycle's goals sit side by side, so you can read before you score.",
+        "points": {
+          "p1": "To-dos sorted by due date",
+          "p2": "Self review and your scores side by side",
+          "p3": "Send back or reassign, with every step on record"
+        },
+        "tasks": {
+          "t1": "Review: Mia Chen's performance review",
+          "t2": "Approve: 2 days of annual leave for Noah Wu",
+          "t3": "Meet: 1-on-1 with Emma Hsu"
+        }
+      },
+      "employee": {
+        "label": "Employees",
+        "title": "Always know what's next",
+        "desc": "Self reviews, choosing reviewers, promotion requests, leave and clock-in all live in one place, and results show up when they're ready.",
+        "points": {
+          "p1": "Fill in forms and clock in from your phone",
+          "p2": "Check leave balances any time",
+          "p3": "Every past review result at a glance"
+        },
+        "tasks": {
+          "t1": "Fill in: this cycle's self review (3 days left)",
+          "t2": "Choose: 2 technical reviewers",
+          "t3": "View: last cycle's result"
+        }
+      },
+      "leader": {
+        "label": "Leadership",
+        "title": "See talent and the organisation in numbers",
+        "desc": "Grade distribution, promotion pass rates, attendance and headcount cost, so decisions rest on data.",
+        "points": {
+          "p1": "Grade distribution compared across departments",
+          "p2": "Headcount cost and attrition trends",
+          "p3": "A full history of grade and title changes"
+        },
+        "tasks": {
+          "t1": "Review: grade distribution by division",
+          "t2": "Compare: promotion pass rates, last 3 cycles",
+          "t3": "Track: this quarter's headcount cost"
         }
       }
     }
   },
-  "stats": {
-    "customers": "Business customers",
-    "timeSaved": "Less time on HR admin",
-    "uptime": "Uptime",
-    "onboardingValue": "7 days",
-    "onboarding": "Average onboarding time",
-    "note": "* Placeholder figures. Replace before launch."
+  "trust": {
+    "index": "04",
+    "eyebrow": "Security",
+    "title": "Who can see what, explained at every step.",
+    "description": "HR data is as sensitive as it gets. {name} checks permissions on the server for every action, not just by hiding buttons on screen.",
+    "items": {
+      "roles": {
+        "title": "Layered permissions",
+        "desc": "Platform admins, the HR owners of each review type, managers and employees each see only what they should."
+      },
+      "visibility": {
+        "title": "Configurable visibility",
+        "desc": "Decide when employees see each review. For example, 1-on-1 notes appear once submitted and development plans stay hidden from the employee."
+      },
+      "audit": {
+        "title": "Full audit trail",
+        "desc": "Every view and every change is recorded: who, when and which record."
+      },
+      "encryption": {
+        "title": "Encryption and backups",
+        "desc": "Data is encrypted in transit and at rest, with daily backups."
+      }
+    }
+  },
+  "scenarios": {
+    "index": "05",
+    "eyebrow": "Scenarios",
+    "title": "Combine the flows that fit your organisation.",
+    "note": "These are example scenarios, not customer case studies.",
+    "items": {
+      "global": {
+        "tag": "Teams across countries",
+        "title": "One set of policies for two offices",
+        "desc": "Questions stay in English while the interface follows each user's language. Each office's HR manages only its own people."
+      },
+      "tech": {
+        "tag": "Engineering-led",
+        "title": "Technical reviews that lead straight to promotion",
+        "desc": "Employees pick senior reviewers who score separately, results feed the promotion decision, and approved grades update automatically."
+      },
+      "growth": {
+        "tag": "Fast-growing",
+        "title": "Probation starts the day someone joins",
+        "desc": "Probation reviews open from the start date, weekly check-ins gather team feedback, and the decision is made before day 100."
+      }
+    }
   },
   "steps": {
-    "eyebrow": "How it works",
-    "title": "Switch systems in three simple steps",
-    "description": "A dedicated consultant guides you all the way, no IT team required.",
+    "index": "06",
+    "eyebrow": "Getting started",
+    "title": "Three steps to your new system.",
+    "description": "A dedicated consultant stays with you throughout, so you can go live without an IT team.",
     "items": {
       "discovery": {
-        "title": "Discovery call",
-        "desc": "A consultant learns your org structure, shifts and pay rules, then recommends a rollout plan."
+        "title": "Discovery",
+        "desc": "We learn your organisation, shifts, pay rules and review policies, then recommend a rollout plan."
       },
       "setup": {
-        "title": "Data import & setup",
-        "desc": "We import your employee data and configure approval flows and pay items to match your current policies."
+        "title": "Data import and setup",
+        "desc": "We import employees and the org chart, then set up approval flows, pay items and review templates."
       },
-      "training": {
-        "title": "Training & go-live",
-        "desc": "Hands-on training for HR and managers, with ongoing support after launch."
+      "launch": {
+        "title": "Training and go-live",
+        "desc": "We train HR and managers, and keep supporting you after launch."
       }
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Frequently asked questions",
+    "title": "Still have questions?",
     "items": {
-      "install": {
-        "q": "Do I need to install software or run a server?",
-        "a": "No. It is a cloud service you can use from any browser or our mobile app, and we handle all updates for you."
+      "modules": {
+        "q": "Can we use just part of the platform?",
+        "a": "Yes. Core HR and talent development can be rolled out separately and extended later, all on the same employee data."
       },
       "customize": {
-        "q": "Can it fit our company policies?",
-        "a": "Yes. Shifts, leave types, approval flows and pay items are all configurable, and our consultants can help with special requirements."
+        "q": "Can review flows and questions follow our own policies?",
+        "a": "Yes. Each review type's steps, owners, questions, eligibility and visibility are set in the admin console, and adding a new type needs no code."
+      },
+      "install": {
+        "q": "Do we need to install software or run servers?",
+        "a": "No. Sign in from a browser or phone, and we take care of updates."
       },
       "migrate": {
-        "q": "Can we migrate data from our old system?",
-        "a": "Yes. We provide Excel import templates, and a consultant will help review and convert your existing data."
+        "q": "Can we bring data over from our old system?",
+        "a": "Yes. We provide import templates, and a consultant helps check and convert your existing data."
       },
       "security": {
         "q": "How is our data protected?",
-        "a": "Data is encrypted in transit and at rest, with daily backups, role-based access control and full audit logs."
+        "a": "Every action is permission-checked on the server, data is encrypted in transit and at rest, and every view and change is in the audit trail."
       },
       "pricing": {
         "q": "How is pricing calculated?",
-        "a": "Pricing is based on headcount and modules. Book a demo and we will prepare a quote for your needs."
+        "a": "By number of users and modules. Book a demo and we'll put together a quote for your needs."
       }
     }
   },
   "cta": {
-    "title": "Ready to make HR work easier?",
-    "description": "Book a 30-minute online demo. A consultant will walk you through the product based on your needs and suggest a rollout plan.",
-    "button": "Book a demo",
-    "mailSubject": "{name} demo request"
+    "eyebrow": "Get started",
+    "title": "See how {name} fits the way you work.",
+    "description": "Book a 30-minute online demo. A consultant will walk through it using your organisation and processes, and suggest how to roll it out.",
+    "primary": "Book a demo",
+    "secondary": "Contact sales",
+    "mailSubject": "Book a {name} demo",
+    "salesSubject": "Question about {name} plans"
   },
   "footer": {
+    "tagline": "Core HR and talent development on one platform.",
+    "product": "Product",
+    "company": "Learn more",
+    "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "photos": {
+    "hero": "A manager and a team member in a one-on-one conversation in a bright meeting room",
+    "band": "Colleagues gathered around a table in a relaxed discussion",
+    "configure": "An HR specialist setting up a review flow on a laptop",
+    "routing": "A team lead going through review feedback with two colleagues",
+    "payroll": "An employee arriving in the morning and clocking in on their phone",
+    "hr": "An HR partner talking with a colleague in the office",
+    "manager": "A manager discussing plans with the team at a whiteboard",
+    "employee": "An employee focused at their desk",
+    "leader": "Leaders reviewing data together in a meeting",
+    "global": "Colleagues in two offices meeting over a video call",
+    "tech": "Two engineers reviewing code together on a screen",
+    "growth": "A new hire's first day, being shown around by a colleague"
   }
 }

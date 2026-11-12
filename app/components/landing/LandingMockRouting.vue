@@ -1,0 +1,92 @@
+<script setup lang="ts">
+// 「自動指派」示意：一份技術評核的關卡與負責人，最下面是組織異動後自動重排的提示
+const { t } = useI18n()
+</script>
+
+<template>
+  <LandingMockFrame
+    :title="t('showcase.mock.routingTitle')"
+    aria-hidden="true"
+  >
+    <ol class="space-y-4">
+      <li class="flex items-center gap-4 rounded-xl border border-ink/10 p-4">
+        <LandingAvatar
+          name="Mia Chen"
+          size="md"
+        />
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-semibold text-ink">
+            {{ t('showcase.mock.routingSelf') }}
+          </p>
+          <p class="text-xs text-ink/55">
+            Mia Chen
+          </p>
+        </div>
+        <LandingStatusPill
+          tone="done"
+          :label="t('heroVisual.done')"
+        />
+      </li>
+
+      <li class="rounded-xl border border-ink/20 bg-paper p-4">
+        <div class="flex items-center gap-4">
+          <span class="grid size-10 shrink-0 place-items-center rounded-full bg-ink text-white">
+            <LandingIcon
+              name="users"
+              class="size-5"
+            />
+          </span>
+          <div class="min-w-0 flex-1">
+            <p class="truncate text-sm font-semibold text-ink">
+              {{ t('showcase.mock.routingReviewer') }}
+            </p>
+            <p class="truncate text-xs text-ink/55">
+              {{ t('showcase.mock.routingReviewerWho') }}
+            </p>
+          </div>
+          <LandingStatusPill
+            tone="active"
+            :label="t('heroVisual.inProgress')"
+          />
+        </div>
+        <div class="mt-4 grid gap-2 sm:grid-cols-2">
+          <div
+            v-for="person in ['Noah Wu', 'Emma Hsu']"
+            :key="person"
+            class="flex items-center gap-2.5 rounded-lg bg-white p-2.5"
+          >
+            <LandingAvatar :name="person" />
+            <span class="truncate text-sm font-medium text-ink">{{ person }}</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="flex items-center gap-4 rounded-xl border border-ink/10 p-4">
+        <LandingAvatar
+          name="Ava Lin"
+          size="md"
+        />
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-semibold text-ink">
+            {{ t('showcase.mock.routingHead') }}
+          </p>
+          <p class="text-xs text-ink/55">
+            Ava Lin
+          </p>
+        </div>
+        <LandingStatusPill
+          tone="waiting"
+          :label="t('heroVisual.waiting')"
+        />
+      </li>
+    </ol>
+
+    <p class="mt-5 flex gap-3 rounded-xl bg-ink p-4 text-sm leading-relaxed text-white/85">
+      <LandingIcon
+        name="route"
+        class="mt-0.5 size-5 shrink-0 text-ember-300"
+      />
+      {{ t('showcase.mock.orgChange') }}
+    </p>
+  </LandingMockFrame>
+</template>
