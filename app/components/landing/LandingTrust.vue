@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { LandingIconName } from './LandingIcon.vue'
 
+// 安全與權限：左邊說明加一組隨捲動錯開的同心圓（裝飾），右邊四張卡片
 const { site } = useAppConfig()
 const { t } = useI18n()
 
@@ -15,58 +16,67 @@ const items: { key: string, icon: LandingIconName }[] = [
 <template>
   <section
     id="trust"
-    class="bg-white py-24 sm:py-32"
+    class="py-24 sm:py-32"
     aria-labelledby="trust-title"
   >
-    <LandingContainer>
-      <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
-        <div class="lg:col-span-5">
-          <LandingSectionHeading
-            id="trust-title"
-            :index="t('trust.index')"
-            :eyebrow="t('trust.eyebrow')"
-            :title="t('trust.title')"
-            :description="t('trust.description', { name: site.productName })"
-            stacked
+    <LandingContainer class="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-5">
+        <LandingSectionHeading
+          id="trust-title"
+          compact
+          :eyebrow="t('trust.eyebrow')"
+          :title="t('trust.title')"
+          :description="t('trust.description', { name: site.productName })"
+        />
+        <div
+          class="relative mt-12 hidden aspect-square max-w-sm lg:block"
+          aria-hidden="true"
+        >
+          <span
+            v-parallax="0.1"
+            class="absolute inset-0 rounded-full border border-ink/10"
           />
-          <div
-            class="mt-10 hidden aspect-square max-w-xs place-items-center rounded-[2rem] bg-ink text-white lg:grid"
-            aria-hidden="true"
+          <span
+            v-parallax="0.04"
+            class="absolute inset-[12%] rounded-full border border-ink/15"
+          />
+          <span
+            v-parallax="-0.04"
+            class="absolute inset-[24%] rounded-full bg-sage"
+          />
+          <span
+            v-parallax="-0.12"
+            class="absolute inset-[36%] grid place-items-center rounded-full bg-ink text-accent"
           >
-            <div class="relative grid size-40 place-items-center">
-              <span class="absolute inset-0 rounded-full border border-white/10" />
-              <span class="absolute inset-5 rounded-full border border-white/15" />
-              <span class="absolute inset-10 rounded-full border border-white/20" />
-              <LandingIcon
-                name="shield"
-                class="size-12 text-ember-300"
-              />
-            </div>
-          </div>
+            <LandingIcon
+              name="shield"
+              class="size-12"
+            />
+          </span>
         </div>
-
-        <ul class="grid gap-4 sm:grid-cols-2 lg:col-span-7">
-          <li
-            v-for="(item, i) in items"
-            :key="item.key"
-            v-reveal="i"
-            class="flex flex-col rounded-3xl border border-ink/10 p-7 transition-colors duration-300 hover:border-ink/25"
-          >
-            <span class="grid size-12 place-items-center rounded-2xl bg-mist text-ink">
-              <LandingIcon
-                :name="item.icon"
-                class="size-6"
-              />
-            </span>
-            <h3 class="mt-8 text-xl font-bold tracking-tight text-ink">
-              {{ t(`trust.items.${item.key}.title`) }}
-            </h3>
-            <p class="mt-3 leading-relaxed text-pretty text-ink/65">
-              {{ t(`trust.items.${item.key}.desc`) }}
-            </p>
-          </li>
-        </ul>
       </div>
+
+      <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-7 lg:self-center">
+        <li
+          v-for="(item, i) in items"
+          :key="item.key"
+          v-reveal="i"
+          class="flex flex-col rounded-[1.75rem] bg-white p-7"
+        >
+          <span class="grid size-12 place-items-center rounded-2xl bg-accent text-ink">
+            <LandingIcon
+              :name="item.icon"
+              class="size-6"
+            />
+          </span>
+          <h3 class="mt-10 font-display text-xl font-medium tracking-tight text-ink">
+            {{ t(`trust.items.${item.key}.title`) }}
+          </h3>
+          <p class="mt-3 leading-relaxed text-pretty text-ink/65">
+            {{ t(`trust.items.${item.key}.desc`) }}
+          </p>
+        </li>
+      </ul>
     </LandingContainer>
   </section>
 </template>

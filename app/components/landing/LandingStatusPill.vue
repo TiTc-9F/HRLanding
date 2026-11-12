@@ -6,14 +6,14 @@ const tones = {
   done: 'bg-emerald-50 text-emerald-700',
   active: 'bg-mist text-ink',
   waiting: 'bg-ink/5 text-ink/55',
-  draft: 'bg-ember-300/30 text-ink',
+  draft: 'bg-accent/50 text-ink',
 }
 
 const dots = {
   done: 'bg-emerald-500',
   active: 'bg-ink',
   waiting: 'bg-ink/30',
-  draft: 'bg-ember-500',
+  draft: 'bg-ink',
 }
 </script>
 

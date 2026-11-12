@@ -1,24 +1,25 @@
 <script setup lang="ts">
-// 連結形式的按鈕。primary：品牌藍實心；secondary：淺底描邊；light：深色區塊上的白底；ghost-light：深色區塊上的描邊
+// 連結形式的按鈕。
+// primary：萊姆黃底黑字（主要行動）；dark：黑底白字；secondary：白底描邊；ghost-light：深色區塊上的描邊
 import type { LandingIconName } from './LandingIcon.vue'
 
 withDefaults(defineProps<{
   href: string
-  variant?: 'primary' | 'secondary' | 'light' | 'ghost-light'
+  variant?: 'primary' | 'dark' | 'secondary' | 'ghost-light'
   size?: 'md' | 'lg'
   icon?: LandingIconName
 }>(), { variant: 'primary', size: 'md', icon: undefined })
 
 const variants = {
-  'primary': 'bg-ink text-white hover:bg-ink-soft focus-visible:outline-ink',
+  'primary': 'bg-accent text-ink hover:bg-accent-strong focus-visible:outline-ink',
+  'dark': 'bg-ink text-white hover:bg-ink-soft focus-visible:outline-ink',
   'secondary': 'border border-ink/15 bg-white text-ink hover:border-ink/40 focus-visible:outline-ink',
-  'light': 'bg-white text-ink hover:bg-mist focus-visible:outline-white',
   'ghost-light': 'border border-white/30 text-white hover:bg-white/10 focus-visible:outline-white',
 }
 
 const sizes = {
   md: 'min-h-11 px-5 text-sm',
-  lg: 'min-h-12 px-6 text-base',
+  lg: 'min-h-13 px-7 text-base',
 }
 </script>
 

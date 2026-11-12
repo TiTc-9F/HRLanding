@@ -14,23 +14,22 @@
     "menu": "Open menu",
     "close": "Close menu",
     "skip": "Skip to main content",
-    "home": "{name} home"
+    "home": "{name} home",
+    "customers": "Customers"
   },
   "hero": {
     "eyebrow": "Core HR × Talent development",
-    "title1": "From clock-in to promotion.",
-    "title2": "One platform",
-    "title3": "to see everyone grow.",
+    "title1": "Let the system run the process.",
+    "title2": "Spend the time on people.",
     "description": "Onboarding, attendance, leave and payroll, plus performance reviews, technical reviews, promotions and probation. {name} keeps core HR and talent development in one place, follows your own policies, and routes every step to the right person.",
     "primary": "Book a demo",
     "secondary": "Explore the platform",
-    "askLabel": "Where would you like to start?",
-    "asks": {
-      "configure": "Does a new review type need code?",
-      "routing": "Who approves what?",
-      "payroll": "How does attendance reach payroll?",
-      "trust": "Who can see the data?"
-    }
+    "pickLabel": "What would you like to sort out first?",
+    "pickedCta": "Book a demo · {n} selected"
+  },
+  "proof": {
+    "caption": "Teams that run HR and talent development on {name}",
+    "mockBadge": "Sample data"
   },
   "heroVisual": {
     "label": "Product preview",
@@ -71,54 +70,17 @@
     }
   },
   "peopleBand": {
-    "quote": "Let the system run the process. Spend the time on people."
+    "quote": "Behind every review and every promotion is someone's next step."
+  },
+  "statement": {
+    "eyebrow": "What we believe",
+    "text": "HR isn't really about forms. It's about people. From someone's first day to every promotion, {name} keeps the process moving, so you have time to help them take the next step."
   },
   "platform": {
     "index": "01",
     "eyebrow": "The platform",
     "title": "Core HR and talent development, finally in the same place.",
     "description": "Employee data is maintained once. Attendance and payroll use it, and so do reviews and promotions. When the org chart changes, approvals and reviews follow automatically.",
-    "tiles": {
-      "records": {
-        "title": "Employee records",
-        "desc": "Contracts, grades and job changes all carry effective dates, so you can see anyone's status on any given day."
-      },
-      "attendance": {
-        "title": "Attendance",
-        "desc": "Clock in by GPS or Wi-Fi. Late arrivals, early leaves and overtime are checked against the shift plan."
-      },
-      "leave": {
-        "title": "Leave approvals",
-        "desc": "Multi-level approvals, annual leave granted by seniority, and balances employees can check themselves."
-      },
-      "payroll": {
-        "title": "Payroll",
-        "desc": "Attendance and leave flow straight in, with insurance, pension and income tax calculated as you go."
-      },
-      "review": {
-        "title": "Performance and technical reviews",
-        "desc": "Self reviews, manager reviews and reviewer scores side by side, with grades worked out by your rules.",
-        "chip1": "Self review",
-        "chip2": "Team lead",
-        "chip3": "Reviewers"
-      },
-      "promotion": {
-        "title": "Promotions",
-        "desc": "Apply, manager sign-off, panel booking and results. Approved grades update automatically."
-      },
-      "probation": {
-        "title": "Probation reviews",
-        "desc": "Opened automatically from the start date, with a reminder on day 65 and a decision within 100 days."
-      },
-      "growth": {
-        "title": "1-on-1s and development plans",
-        "desc": "Meeting notes, development plans and recommendation letters, all in one growth history."
-      },
-      "insights": {
-        "title": "Reports",
-        "desc": "Cycle progress funnels, grade distribution, attendance and headcount cost in live charts."
-      }
-    },
     "stats": {
       "templates": {
         "value": "11",
@@ -132,6 +94,67 @@
         "value": "1",
         "label": "employee record shared across the platform"
       }
+    }
+  },
+  "stack": {
+    "items": {
+      "core": {
+        "label": "Core HR",
+        "title": "Onboarding, attendance, leave and payroll, entered only once.",
+        "desc": "Employee data is maintained once. Attendance and leave flow into payroll, with insurance and income tax calculated as you go.",
+        "points": {
+          "p1": "Clock in by GPS or Wi-Fi from a phone",
+          "p2": "Multi-level approvals and seniority-based leave",
+          "p3": "Digital payslips sent straight to employees"
+        }
+      },
+      "review": {
+        "label": "Performance and technical reviews",
+        "title": "Self review, manager and reviewers, side by side before you score.",
+        "desc": "Every step goes to the right person and grades follow your rules. Flows and questions are yours to configure.",
+        "points": {
+          "p1": "Flows, questions and eligibility set in the admin console",
+          "p2": "Employees can choose reviewers, each scoring separately",
+          "p3": "Grades calculated automatically by your rules"
+        }
+      },
+      "growth": {
+        "label": "Probation and promotion",
+        "title": "From new hire to promotion, every step on record.",
+        "desc": "Probation opens from the start date. Promotions run from request to panel result in one flow, and approved grades update automatically.",
+        "points": {
+          "p1": "Automatic reminder on day 65",
+          "p2": "Request, manager sign-off, panel and result in one flow",
+          "p3": "Grade changes carry effective dates and full history"
+        }
+      },
+      "care": {
+        "label": "1-on-1s and growth",
+        "title": "1-on-1s and development plans, no longer scattered.",
+        "desc": "Meeting notes, development plans and recommendation letters live in one growth history, with visibility you control.",
+        "points": {
+          "p1": "1-on-1 notes appear to the employee once submitted",
+          "p2": "Development plans can stay hidden from the employee",
+          "p3": "Recommendation letters picked straight into promotion requests"
+        }
+      }
+    },
+    "mock": {
+      "leaveRequest": "Noah Wu · 2 days annual leave",
+      "approve": "Approve",
+      "self": "Self review",
+      "lead": "Team lead",
+      "reviewer": "Reviewers",
+      "grade": "Grade",
+      "day1": "Day 1 · Start",
+      "day65": "Day 65 · Reminder",
+      "day100": "Day 100 · Decision",
+      "promotion": "Grade 7 → 8",
+      "noteTitle": "1-on-1 with Emma Hsu",
+      "note1": "Settling into the new project well, keen to join architecture discussions",
+      "note2": "Next quarter goal: mentor a new hire",
+      "note3": "Support needed: time for a tech talk",
+      "visibility": "Visible to employee once submitted"
     }
   },
   "showcase": {
@@ -292,26 +315,43 @@
       }
     }
   },
-  "scenarios": {
-    "index": "05",
-    "eyebrow": "Scenarios",
-    "title": "Combine the flows that fit your organisation.",
-    "note": "These are example scenarios, not customer case studies.",
+  "cases": {
+    "eyebrow": "Customers",
+    "title": "They took their time back from the process.",
+    "note": "Company names, people, quotes and figures are illustrative samples for this proposal.",
     "items": {
       "global": {
-        "tag": "Teams across countries",
-        "title": "One set of policies for two offices",
-        "desc": "Questions stay in English while the interface follows each user's language. Each office's HR manages only its own people."
+        "company": "Harborline",
+        "meta": "Logistics · Taiwan and Singapore · 320 people",
+        "person": "Grace Chou",
+        "role": "HR Manager",
+        "quote": "We used to run a spreadsheet in each office. Now it is one employee record and one review flow, and each office HR looks after its own people.",
+        "m1v": "6 → 3 weeks",
+        "m1l": "per review cycle",
+        "m2v": "2 → 1",
+        "m2l": "HR systems"
       },
       "tech": {
-        "tag": "Engineering-led",
-        "title": "Technical reviews that lead straight to promotion",
-        "desc": "Employees pick senior reviewers who score separately, results feed the promotion decision, and approved grades update automatically."
+        "company": "Kitewave",
+        "meta": "Software · engineering-led · 180 people",
+        "person": "Daniel Ho",
+        "role": "VP of Engineering",
+        "quote": "Employees pick their technical reviewers and each one scores separately, so promotion results feel fair. And nobody emails back and forth to book panels anymore.",
+        "m1v": "3 days",
+        "m1l": "average time to book a panel",
+        "m2v": "−70%",
+        "m2l": "promotion admin back-and-forth"
       },
       "growth": {
-        "tag": "Fast-growing",
-        "title": "Probation starts the day someone joins",
-        "desc": "Probation reviews open from the start date, weekly check-ins gather team feedback, and the decision is made before day 100."
+        "company": "Mapleton Health",
+        "meta": "Clinic group · fast-growing · 450 people",
+        "person": "Iris Wang",
+        "role": "Chief People Officer",
+        "quote": "Probation starts the day someone joins, managers get a reminder on day 65, and no one slips past day 100 anymore.",
+        "m1v": "0",
+        "m1l": "overdue probation reviews",
+        "m2v": "40+",
+        "m2l": "new hires a month"
       }
     }
   },
@@ -319,7 +359,7 @@
     "index": "06",
     "eyebrow": "Getting started",
     "title": "Three steps to your new system.",
-    "description": "A dedicated consultant stays with you throughout, so you can go live without an IT team.",
+    "description": "A dedicated consultant stays with you throughout. Start with a pilot in one department, no IT team needed.",
     "items": {
       "discovery": {
         "title": "Discovery",
@@ -372,7 +412,13 @@
     "primary": "Book a demo",
     "secondary": "Contact sales",
     "mailSubject": "Book a {name} demo",
-    "salesSubject": "Question about {name} plans"
+    "salesSubject": "Question about {name} plans",
+    "mailSubjectTopics": "Book a {name} demo: {topics}",
+    "assurances": {
+      "a1": "30-minute online demo",
+      "a2": "Pilot with one department first",
+      "a3": "No IT team needed"
+    }
   },
   "footer": {
     "tagline": "Core HR and talent development on one platform.",

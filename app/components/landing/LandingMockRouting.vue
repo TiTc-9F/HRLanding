@@ -84,7 +84,7 @@ const { t } = useI18n()
     <p class="mt-5 flex gap-3 rounded-xl bg-ink p-4 text-sm leading-relaxed text-white/85">
       <LandingIcon
         name="route"
-        class="mt-0.5 size-5 shrink-0 text-ember-300"
+        class="mt-0.5 size-5 shrink-0 text-accent"
       />
       {{ t('showcase.mock.orgChange') }}
     </p>

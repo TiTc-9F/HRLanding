@@ -13,7 +13,7 @@ withDefaults(defineProps<{ items: string[], dark?: boolean }>(), { dark: false }
     >
       <span
         class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
-        :class="dark ? 'bg-white/10 text-white/70' : 'bg-mist text-ink'"
+        :class="dark ? 'bg-accent text-ink' : 'bg-ink text-accent'"
       >
         <LandingIcon
           name="check"

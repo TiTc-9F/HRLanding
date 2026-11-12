@@ -27,30 +27,30 @@ No text, no logos, no watermarks, no brand names, no stock-photo smiles, no futu
 
 ### 1. `hero-one-on-one.jpg`：首屏主圖
 
-- 尺寸：2400 × 1650（16:11）
-- 位置：首屏右側，左下角會疊一張考核進度卡，右上角會疊兩張小卡
+- 尺寸：2000 × 2400（5:6 直式；手機會裁成 4:5）
+- 位置：首屏右側的陶土色底板裡，左上、右下、左下會疊三張浮動小卡
 
 ```
 A team lead and a team member having a relaxed one-on-one conversation at a small round table by a large window, a laptop open but pushed aside, both leaning in and listening, a notebook and a terracotta mug on the table.
-Place the two people in the center-right of the frame, upper two-thirds. Keep the bottom-left corner and the top-right corner calm and uncluttered (plain wall, soft window light), because interface cards will overlap those areas.
-Horizontal 16:11.
+Vertical portrait framing. Place the two people in the middle of the frame, faces in the upper half. Keep the top-left, bottom-right and bottom-left corners calm and uncluttered (plain wall, table surface), because interface cards will float over those areas.
+Vertical 5:6.
 ```
 
 ### 2. `people-band.jpg`：寬幅團隊照
 
-- 尺寸：2520 × 1080（21:9）；手機會從中間裁成 4:5，主角要在畫面中間 40% 寬度內
-- 位置：跑馬燈下方，底部會疊一句白色標語，下緣會加深
+- 尺寸：2700 × 1800（3:2）；畫面會以視差上下移動、上下各裁掉一部分，手機會從中間裁成直式，主角要在畫面中間 40% 寬度、中間 60% 高度內
+- 位置：平台全貌下方的大圖，底部會疊一句白色標語，下緣會加深
 
 ```
 A small cross-functional team of five gathered around a long wooden table in a bright open office, mid-discussion, one person sketching on paper while others react, natural and warm interaction, coffee cups and laptops.
-Keep all key people within the central 40% of the width so the image can also be cropped to a tall 4:5. Keep the bottom third of the frame simple and slightly darker (table surface, floor) because a white headline will sit there.
-Ultra-wide 21:9.
+Keep all key people within the central 40% of the width and the central 60% of the height, because the image moves with scrolling and its top and bottom get cropped. Keep the bottom third simple and slightly darker (table surface, floor) because a white headline will sit there.
+Horizontal 3:2.
 ```
 
 ### 3. `showcase-configure.jpg`：自訂評估流程
 
 - 尺寸：2400 × 1800（4:3）
-- 位置：產品特色第一段，下方約 40% 會被產品畫面蓋住（偏左）
+- 位置：產品特色第一段（右欄），下方約 40% 會被產品畫面蓋住（偏左）
 
 ```
 An HR specialist working at a standing desk, thoughtfully reviewing something on a laptop, one hand on the trackpad, a printed org chart and sticky notes beside the laptop, focused but relaxed expression.
@@ -80,67 +80,67 @@ Keep the person in the upper 60% of the frame, positioned toward the right. The 
 Horizontal 4:3.
 ```
 
-### 6. `role-hr.jpg`：角色分頁「HR」
+### 6. `role-hr.jpg`：角色卡片「HR」
 
-- 尺寸：1920 × 1080（16:9）
-- 位置：角色分頁右側的深色卡片上方
+- 尺寸：1920 × 1200（16:10）
+- 位置：「適用角色」橫向捲動卡片的上方
 
 ```
 An HR partner in a quiet meeting room talking warmly with an employee, holding a printed document, attentive listening, both seated, glass wall behind them.
-Subjects centered. Horizontal 16:9.
+Subjects centered. Horizontal 16:10.
 ```
 
-### 7. `role-manager.jpg`：角色分頁「主管」
+### 7. `role-manager.jpg`：角色卡片「主管」
 
-- 尺寸：1920 × 1080（16:9）
+- 尺寸：1920 × 1200（16:10）
 
 ```
 A manager standing at a whiteboard with three team members seated around, discussing plans, the manager gesturing toward hand-drawn boxes and arrows (no readable text), engaged team.
-Subjects centered. Horizontal 16:9.
+Subjects centered. Horizontal 16:10.
 ```
 
-### 8. `role-employee.jpg`：角色分頁「員工」
+### 8. `role-employee.jpg`：角色卡片「員工」
 
-- 尺寸：1920 × 1080（16:9）
+- 尺寸：1920 × 1200（16:10）
 
 ```
 An employee focused at their desk with headphones around the neck, typing on a laptop, a plant and a terracotta notebook nearby, calm concentration, colleagues softly blurred in the background.
-Subject centered. Horizontal 16:9.
+Subject centered. Horizontal 16:10.
 ```
 
-### 9. `role-leader.jpg`：角色分頁「管理層」
+### 9. `role-leader.jpg`：角色卡片「管理層」
 
-- 尺寸：1920 × 1080（16:9）
+- 尺寸：1920 × 1200（16:10）
 
 ```
 Two senior leaders in a small meeting room reviewing printed charts spread on the table (abstract bars, no readable numbers or text), one listening while the other explains, thoughtful and decisive mood.
-Subjects centered. Horizontal 16:9.
+Subjects centered. Horizontal 16:10.
 ```
 
 ### 10. `scenario-global.jpg`：情境「跨國團隊」
 
-- 尺寸：2400 × 1800（4:3）
-- 位置：適用情境卡片上方
+- 尺寸：1920 × 2400（4:5 直式）
+- 位置：適用情境卡片，照片會在框裡隨捲動上下移動，主角放在中間
 
 ```
 A colleague in a Taipei office on a video call with teammates in Singapore, the laptop screen showing a softly blurred grid of two or three people (no readable UI), friendly conversation, late afternoon light.
-Subject centered. Horizontal 4:3.
+Subject centered, vertical framing. Vertical 4:5.
 ```
 
 ### 11. `scenario-tech.jpg`：情境「技術職為主」
 
-- 尺寸：2400 × 1800（4:3）
+- 尺寸：1920 × 2400（4:5 直式）
 
 ```
 Two software engineers pair-reviewing work at a dual-monitor desk, the monitors showing blurred, unreadable code-like shapes, one engineer explaining and the other nodding, focused collaboration.
-Subjects centered. Horizontal 4:3.
+Subjects centered, vertical framing. Vertical 4:5.
 ```
 
 ### 12. `scenario-growth.jpg`：情境「快速成長」
 
-- 尺寸：2400 × 1800（4:3）
+- 尺寸：1920 × 2400（4:5 直式）
 
 ```
 A new hire on their first day being welcomed and shown around the office by a friendly colleague, carrying a new laptop and a welcome tote bag, walking past desks, genuine and warm moment.
-Subjects centered. Horizontal 4:3.
+Subjects centered, vertical framing. Vertical 4:5.
 ```

@@ -1,31 +1,34 @@
 @import "tailwindcss";
 
 /* 設計 token：顏色、字型、動態都在這裡定義，元件只用這些名稱，不寫色碼。
-   色調對齊 hr-system 用的 frappe-ui：無彩度的中性灰（數值取自 frappe-ui 的 surface／ink／outline），
-   主要按鈕與深色區塊用近黑色，顏色只留一個暖橘做小面積重點 */
+   色調：暖石米白底、暖炭黑文字，萊姆黃當強調色（一律配黑字），陶土與鼠尾草當大面積的柔和底色 */
 @theme {
   --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
 
-  /* 文字、主要按鈕、深色區塊（frappe-ui ink-gray-9） */
-  --color-ink: oklch(0.168 0 0);
-  /* 深色區塊上的卡片（frappe-ui surface-gray-10） */
-  --color-ink-soft: oklch(0.205 0 0);
-  /* 頁面底色（frappe-ui surface-gray-1） */
-  --color-paper: oklch(0.979 0 0);
-  /* 淺灰底：標籤、圖示底、按鈕 hover（frappe-ui surface-gray-3） */
-  --color-mist: oklch(0.946 0 0);
+  /* 文字、主要按鈕、深色區塊 */
+  --color-ink: oklch(0.22 0.006 80);
+  --color-ink-soft: oklch(0.3 0.008 80);
+  /* 頁面底色 */
+  --color-paper: oklch(0.965 0.006 85);
+  /* 卡片底色（比頁面深一階） */
+  --color-stone: oklch(0.925 0.01 85);
+  /* 淺灰底：標籤、圖示底、按鈕 hover */
+  --color-mist: oklch(0.945 0.008 85);
 
-  /* 暖橘重點：只用在小面積的標示（圓點、標籤、草稿狀態），不當按鈕底色 */
-  --color-ember-300: oklch(0.86 0.08 50);
-  --color-ember-400: oklch(0.74 0.15 45);
-  --color-ember-500: oklch(0.66 0.18 40);
+  /* 萊姆黃：主要行動按鈕、重點標示；上面的字一律用 ink */
+  --color-accent: oklch(0.92 0.17 112);
+  --color-accent-strong: oklch(0.86 0.18 112);
+  /* 大面積柔和底色 */
+  --color-clay: oklch(0.9 0.035 55);
+  --color-sage: oklch(0.91 0.03 150);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 6rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -34,7 +37,7 @@ html {
   }
 }
 
-/* 中文標題優先在標點處換行（避免「每／一步」這種斷法），真的放不下才在字中間換 */
+/* 中文標題優先在標點處換行，真的放不下才在字中間換 */
 :lang(zh) :is(h1, h2, h3) {
   word-break: keep-all;
   overflow-wrap: anywhere;
@@ -46,8 +49,8 @@ html {
   opacity: 0;
   transform: translateY(2rem);
   transition:
-    opacity 0.8s var(--ease-out-expo),
-    transform 0.8s var(--ease-out-expo);
+    opacity 0.9s var(--ease-out-expo),
+    transform 0.9s var(--ease-out-expo);
   transition-delay: var(--reveal-delay, 0ms);
 }
 
@@ -56,7 +59,7 @@ html {
   transform: none;
 }
 
-/* 分頁切換時內容輕微上移淡入（只在 motion-safe 時套用） */
+/* 分頁或內容切換時輕微上移淡入（只在 motion-safe 時套用） */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -64,32 +67,32 @@ html {
   }
 }
 
-/* 跑馬燈：滑鼠移上去或鍵盤聚焦時暫停；減少動態時改成一般換行清單 */
-@keyframes marquee {
+/* 首屏浮動小卡的待機漂浮 */
+@keyframes float-y {
+  50% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+/* 客戶 logo 帶：慢慢往左滑，滑鼠移上去或鍵盤聚焦時暫停；減少動態時改成置中換行（見元件的 motion-reduce） */
+@keyframes logo-marquee {
   to {
     transform: translateX(-50%);
   }
 }
 
-.marquee-track {
-  animation: marquee 40s linear infinite;
+.logo-marquee-track {
+  animation: logo-marquee 45s linear infinite;
 }
 
-.marquee:hover .marquee-track,
-.marquee:focus-within .marquee-track {
+.logo-marquee:hover .logo-marquee-track,
+.logo-marquee:focus-within .logo-marquee-track {
   animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track {
+  .logo-marquee-track {
     animation: none;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
   }
-
-  .marquee-clone {
-    display: none;
-  }
 }
-

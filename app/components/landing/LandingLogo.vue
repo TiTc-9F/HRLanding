@@ -22,7 +22,7 @@
       cx="19.5"
       cy="16"
       r="6"
-      class="fill-ember-400"
+      class="fill-accent"
     />
   </svg>
 </template>

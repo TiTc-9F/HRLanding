@@ -4,8 +4,8 @@ const props = withDefaults(defineProps<{ name: string, size?: 'sm' | 'md' }>(), 
 
 const palettes = [
   'bg-mist text-ink',
-  'bg-ember-300/40 text-ink',
-  'bg-emerald-100 text-emerald-800',
+  'bg-clay text-ink',
+  'bg-sage text-ink',
   'bg-ink text-white',
 ]
 
