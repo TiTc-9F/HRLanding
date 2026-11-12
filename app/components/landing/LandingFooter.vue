@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { site } = useAppConfig()
+const { t } = useI18n()
 const year = new Date().getFullYear()
 </script>
 
@@ -10,7 +11,7 @@ const year = new Date().getFullYear()
         <span class="grid size-6 place-items-center rounded-md bg-brand-600 text-[10px] text-white">HR</span>
         {{ site.productName }}
       </p>
-      <p>© {{ year }} {{ site.productName }}. All rights reserved.</p>
+      <p>© {{ year }} {{ site.productName }}. {{ t('footer.rights') }}</p>
     </div>
   </footer>
 </template>

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { site } = useAppConfig()
+const { t } = useI18n()
 
 const mailto = computed(() =>
-  `mailto:${site.contactEmail}?subject=${encodeURIComponent(`${site.productName} demo request`)}`,
+  `mailto:${site.contactEmail}?subject=${encodeURIComponent(t('cta.mailSubject', { name: site.productName }))}`,
 )
 </script>
 
@@ -15,10 +16,10 @@ const mailto = computed(() =>
       <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 px-6 py-16 text-center text-white sm:px-16">
         <div class="absolute -top-24 -right-24 size-72 rounded-full bg-white/10 blur-2xl" />
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          Ready to make HR work easier?
+          {{ t('cta.title') }}
         </h2>
         <p class="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-          Book a 30-minute online demo. A consultant will walk you through the product based on your needs and suggest a rollout plan.
+          {{ t('cta.description') }}
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a
@@ -29,7 +30,7 @@ const mailto = computed(() =>
               name="mail"
               class="size-5"
             />
-            Book a demo
+            {{ t('cta.button') }}
           </a>
           <a
             :href="`mailto:${site.contactEmail}`"

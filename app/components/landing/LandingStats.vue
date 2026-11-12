@@ -1,11 +1,13 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 // TODO: 替換成公司實際數據
-const stats = [
-  { value: '500+', label: 'Business customers' },
-  { value: '80%', label: 'Less time on HR admin' },
-  { value: '99.9%', label: 'Uptime' },
-  { value: '7 days', label: 'Average onboarding time' },
-]
+const stats = computed(() => [
+  { value: '500+', label: t('stats.customers') },
+  { value: '80%', label: t('stats.timeSaved') },
+  { value: '99.9%', label: t('stats.uptime') },
+  { value: t('stats.onboardingValue'), label: t('stats.onboarding') },
+])
 </script>
 
 <template>
@@ -26,7 +28,7 @@ const stats = [
         </div>
       </dl>
       <p class="mt-8 text-center text-xs text-brand-200">
-        * Placeholder figures. Replace before launch.
+        {{ t('stats.note') }}
       </p>
     </div>
   </section>

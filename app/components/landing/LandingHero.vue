@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const { site } = useAppConfig()
+const { t } = useI18n()
 
-const highlights = ['Cloud-based, nothing to install', 'Built for Taiwan labor law', 'Guided onboarding']
+const highlights = computed(() =>
+  ['cloud', 'compliance', 'onboarding'].map(key => t(`hero.highlights.${key}`)),
+)
 </script>
 
 <template>
@@ -16,14 +19,14 @@ const highlights = ['Cloud-based, nothing to install', 'Built for Taiwan labor l
       <div>
         <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-sm text-brand-700">
           <span class="size-2 rounded-full bg-brand-500" />
-          {{ site.tagline }}
+          {{ t('hero.badge') }}
         </p>
         <h1 class="text-4xl leading-tight font-bold tracking-tight text-slate-900 sm:text-5xl">
-          Less paperwork.<br>
-          <span class="text-brand-600">More time for people.</span>
+          {{ t('hero.titleLine1') }}<br>
+          <span class="text-brand-600">{{ t('hero.titleLine2') }}</span>
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-          From onboarding and attendance to leave and payroll, {{ site.productName }} brings scattered HR processes into one platform, automates the repetitive work, and gives managers a real-time view of their organization.
+          {{ t('hero.description', { name: site.productName }) }}
         </p>
 
         <div class="mt-8 flex flex-wrap gap-4">
@@ -31,7 +34,7 @@ const highlights = ['Cloud-based, nothing to install', 'Built for Taiwan labor l
             href="#contact"
             class="inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 font-medium text-white shadow-lg shadow-brand-600/20 transition hover:bg-brand-700"
           >
-            Book a free demo
+            {{ t('hero.primary') }}
             <LandingIcon
               name="arrow"
               class="size-4"
@@ -41,7 +44,7 @@ const highlights = ['Cloud-based, nothing to install', 'Built for Taiwan labor l
             href="#features"
             class="rounded-full border border-slate-300 bg-white px-6 py-3 font-medium text-slate-700 transition hover:border-brand-300 hover:text-brand-700"
           >
-            Explore features
+            {{ t('hero.secondary') }}
           </a>
         </div>
 

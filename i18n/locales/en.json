@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "{name} – All-in-one HR platform",
+    "description": "From onboarding and attendance to leave and payroll, run every HR process on one platform and give your HR team time back for people."
+  },
+  "nav": {
+    "features": "Features",
+    "modules": "Modules",
+    "steps": "How it works",
+    "faq": "FAQ",
+    "bookDemo": "Book a demo",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "All-in-one HR platform",
+    "titleLine1": "Less paperwork.",
+    "titleLine2": "More time for people.",
+    "description": "From onboarding and attendance to leave and payroll, {name} brings scattered HR processes into one platform, automates the repetitive work, and gives managers a real-time view of their organization.",
+    "primary": "Book a free demo",
+    "secondary": "Explore features",
+    "highlights": {
+      "cloud": "Cloud-based, nothing to install",
+      "compliance": "Built for local labor law",
+      "onboarding": "Guided onboarding"
+    }
+  },
+  "dashboard": {
+    "checkedIn": "Checked in",
+    "pendingLeave": "Pending leave",
+    "pendingLeaveSub": "requests",
+    "newHires": "New hires",
+    "newHiresSub": "this month",
+    "attendanceWeek": "Attendance this week",
+    "annualLeave": "Annual leave · 1d",
+    "overtime": "Overtime · 3h",
+    "sickLeave": "Sick leave · 0.5d",
+    "approve": "Approve",
+    "payrollDone": "Payroll complete",
+    "payrollDetail": "✓ 135 employees · 2 min"
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "Everything HR does, in one platform",
+    "description": "Hand the repetitive admin work to the system so your HR team can focus on what matters: people.",
+    "items": {
+      "records": {
+        "title": "Employee records",
+        "desc": "Keep profiles, contracts and job history in one place with role-based access, instead of spreadsheets scattered everywhere."
+      },
+      "attendance": {
+        "title": "Time & attendance",
+        "desc": "Clock in by mobile GPS or Wi-Fi, match against schedules automatically, and get alerts on exceptions."
+      },
+      "leave": {
+        "title": "Leave & overtime",
+        "desc": "Online requests with multi-level approvals, automatic annual leave accrual, and self-service balances."
+      },
+      "payroll": {
+        "title": "Payroll",
+        "desc": "Pull in attendance and leave data, calculate insurance and tax automatically, and issue payslips in one click."
+      },
+      "reports": {
+        "title": "Reports & analytics",
+        "desc": "Live dashboards for labor cost, turnover and attendance, so decisions are backed by data."
+      },
+      "security": {
+        "title": "Security & compliance",
+        "desc": "Encryption in transit and at rest plus full audit logs, aligned with privacy and labor regulations."
+      }
+    }
+  },
+  "modules": {
+    "eyebrow": "Modules",
+    "title": "HR workflows built for growing businesses",
+    "description": "Designed around how teams actually work, so everyone is productive from day one.",
+    "screenshot": "{label} screenshot",
+    "items": {
+      "attendance": {
+        "label": "Attendance",
+        "title": "Clock-ins, shifts and alerts on autopilot",
+        "desc": "Employees clock in from their phones, the system flags late arrivals, early leaves and overtime against the schedule, and managers are notified instantly. No more month-end reconciliation.",
+        "points": {
+          "p1": "GPS, Wi-Fi and IP-based clock-in",
+          "p2": "Flexible hours and rotating shifts",
+          "p3": "Automatic exception alerts to managers"
+        }
+      },
+      "leave": {
+        "label": "Leave approvals",
+        "title": "Approvals that never get stuck",
+        "desc": "Design multi-level approval flows, keep a full trail from request to approval, and let employees check their own leave balances, calculated automatically.",
+        "points": {
+          "p1": "Approval steps per department",
+          "p2": "Annual leave accrued by seniority",
+          "p3": "Approve on the go with push notifications"
+        }
+      },
+      "payroll": {
+        "label": "Payroll",
+        "title": "From timesheet to payslip in one click",
+        "desc": "Attendance, leave and overtime flow straight into payroll. Insurance, pension and tax are calculated instantly, and digital payslips go out to every employee.",
+        "points": {
+          "p1": "Insurance brackets kept up to date",
+          "p2": "Bank transfer files in one click",
+          "p3": "Encrypted digital payslips"
+        }
+      }
+    }
+  },
+  "stats": {
+    "customers": "Business customers",
+    "timeSaved": "Less time on HR admin",
+    "uptime": "Uptime",
+    "onboardingValue": "7 days",
+    "onboarding": "Average onboarding time",
+    "note": "* Placeholder figures. Replace before launch."
+  },
+  "steps": {
+    "eyebrow": "How it works",
+    "title": "Switch systems in three simple steps",
+    "description": "A dedicated consultant guides you all the way, no IT team required.",
+    "items": {
+      "discovery": {
+        "title": "Discovery call",
+        "desc": "A consultant learns your org structure, shifts and pay rules, then recommends a rollout plan."
+      },
+      "setup": {
+        "title": "Data import & setup",
+        "desc": "We import your employee data and configure approval flows and pay items to match your current policies."
+      },
+      "training": {
+        "title": "Training & go-live",
+        "desc": "Hands-on training for HR and managers, with ongoing support after launch."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": {
+      "install": {
+        "q": "Do I need to install software or run a server?",
+        "a": "No. It is a cloud service you can use from any browser or our mobile app, and we handle all updates for you."
+      },
+      "customize": {
+        "q": "Can it fit our company policies?",
+        "a": "Yes. Shifts, leave types, approval flows and pay items are all configurable, and our consultants can help with special requirements."
+      },
+      "migrate": {
+        "q": "Can we migrate data from our old system?",
+        "a": "Yes. We provide Excel import templates, and a consultant will help review and convert your existing data."
+      },
+      "security": {
+        "q": "How is our data protected?",
+        "a": "Data is encrypted in transit and at rest, with daily backups, role-based access control and full audit logs."
+      },
+      "pricing": {
+        "q": "How is pricing calculated?",
+        "a": "Pricing is based on headcount and modules. Book a demo and we will prepare a quote for your needs."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to make HR work easier?",
+    "description": "Book a 30-minute online demo. A consultant will walk you through the product based on your needs and suggest a rollout plan.",
+    "button": "Book a demo",
+    "mailSubject": "{name} demo request"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

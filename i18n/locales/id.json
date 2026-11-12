@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "{name} – Platform HR all-in-one",
+    "description": "Dari onboarding, absensi, cuti hingga penggajian, jalankan semua proses HR dalam satu platform dan beri tim HR Anda lebih banyak waktu untuk orang-orangnya."
+  },
+  "nav": {
+    "features": "Fitur",
+    "modules": "Modul",
+    "steps": "Cara kerja",
+    "faq": "FAQ",
+    "bookDemo": "Jadwalkan demo",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "badge": "Platform HR all-in-one",
+    "titleLine1": "Lebih sedikit administrasi.",
+    "titleLine2": "Lebih banyak waktu untuk orang.",
+    "description": "Dari onboarding, absensi, cuti hingga penggajian, {name} menyatukan proses HR yang tersebar ke dalam satu platform, mengotomatiskan pekerjaan berulang, dan memberi manajer gambaran organisasi secara real-time.",
+    "primary": "Jadwalkan demo gratis",
+    "secondary": "Lihat fitur",
+    "highlights": {
+      "cloud": "Berbasis cloud, tanpa instalasi",
+      "compliance": "Sesuai peraturan ketenagakerjaan lokal",
+      "onboarding": "Pendampingan implementasi"
+    }
+  },
+  "dashboard": {
+    "checkedIn": "Sudah absen",
+    "pendingLeave": "Cuti tertunda",
+    "pendingLeaveSub": "pengajuan",
+    "newHires": "Karyawan baru",
+    "newHiresSub": "bulan ini",
+    "attendanceWeek": "Kehadiran minggu ini",
+    "annualLeave": "Cuti tahunan · 1h",
+    "overtime": "Lembur · 3j",
+    "sickLeave": "Cuti sakit · 0,5h",
+    "approve": "Setujui",
+    "payrollDone": "Penggajian selesai",
+    "payrollDetail": "✓ 135 karyawan · 2 menit"
+  },
+  "features": {
+    "eyebrow": "Fitur",
+    "title": "Semua pekerjaan HR dalam satu platform",
+    "description": "Serahkan pekerjaan administrasi yang berulang kepada sistem agar tim HR bisa fokus pada hal terpenting: orang.",
+    "items": {
+      "records": {
+        "title": "Data karyawan",
+        "desc": "Simpan profil, kontrak, dan riwayat jabatan di satu tempat dengan akses berbasis peran, bukan di spreadsheet yang tersebar."
+      },
+      "attendance": {
+        "title": "Absensi",
+        "desc": "Absen lewat GPS ponsel atau Wi-Fi, dicocokkan otomatis dengan jadwal, dan dapatkan peringatan saat ada anomali."
+      },
+      "leave": {
+        "title": "Cuti & lembur",
+        "desc": "Pengajuan online dengan persetujuan bertingkat, perhitungan cuti tahunan otomatis, dan saldo cuti yang bisa dicek sendiri."
+      },
+      "payroll": {
+        "title": "Penggajian",
+        "desc": "Data absensi dan cuti langsung masuk, asuransi dan pajak dihitung otomatis, dan slip gaji terbit dengan satu klik."
+      },
+      "reports": {
+        "title": "Laporan & analitik",
+        "desc": "Dasbor real-time untuk biaya tenaga kerja, turnover, dan kehadiran, sehingga keputusan didukung data."
+      },
+      "security": {
+        "title": "Keamanan & kepatuhan",
+        "desc": "Enkripsi saat transit dan saat disimpan, serta log audit lengkap, sesuai regulasi privasi dan ketenagakerjaan."
+      }
+    }
+  },
+  "modules": {
+    "eyebrow": "Modul",
+    "title": "Alur kerja HR untuk bisnis yang berkembang",
+    "description": "Dirancang sesuai cara tim bekerja, sehingga semua orang produktif sejak hari pertama.",
+    "screenshot": "Tangkapan layar {label}",
+    "items": {
+      "attendance": {
+        "label": "Absensi",
+        "title": "Absen, jadwal shift, dan peringatan serba otomatis",
+        "desc": "Karyawan absen dari ponsel, sistem menandai keterlambatan, pulang cepat, dan lembur sesuai jadwal, lalu manajer langsung diberi tahu. Tidak perlu rekap manual di akhir bulan.",
+        "points": {
+          "p1": "Absen via GPS, Wi-Fi, dan IP",
+          "p2": "Jam kerja fleksibel dan shift bergilir",
+          "p3": "Peringatan anomali otomatis ke manajer"
+        }
+      },
+      "leave": {
+        "label": "Persetujuan cuti",
+        "title": "Persetujuan yang tidak pernah macet",
+        "desc": "Atur alur persetujuan bertingkat, simpan jejak lengkap dari pengajuan hingga persetujuan, dan biarkan karyawan mengecek saldo cuti yang dihitung otomatis.",
+        "points": {
+          "p1": "Tahap persetujuan per departemen",
+          "p2": "Cuti tahunan sesuai masa kerja",
+          "p3": "Setujui di mana saja lewat notifikasi"
+        }
+      },
+      "payroll": {
+        "label": "Penggajian",
+        "title": "Dari absensi ke slip gaji dalam satu klik",
+        "desc": "Data absensi, cuti, dan lembur langsung masuk ke penggajian. Asuransi, dana pensiun, dan pajak dihitung seketika, lalu slip gaji digital dikirim ke setiap karyawan.",
+        "points": {
+          "p1": "Tarif asuransi selalu diperbarui",
+          "p2": "File transfer bank dengan satu klik",
+          "p3": "Slip gaji digital terenkripsi"
+        }
+      }
+    }
+  },
+  "stats": {
+    "customers": "Pelanggan bisnis",
+    "timeSaved": "Hemat waktu administrasi HR",
+    "uptime": "Uptime sistem",
+    "onboardingValue": "7 hari",
+    "onboarding": "Rata-rata waktu implementasi",
+    "note": "* Angka contoh. Ganti sebelum peluncuran."
+  },
+  "steps": {
+    "eyebrow": "Cara kerja",
+    "title": "Ganti sistem dalam tiga langkah mudah",
+    "description": "Konsultan khusus mendampingi Anda dari awal hingga akhir, tanpa perlu tim IT.",
+    "items": {
+      "discovery": {
+        "title": "Diskusi kebutuhan",
+        "desc": "Konsultan mempelajari struktur organisasi, shift, dan aturan gaji Anda, lalu merekomendasikan rencana implementasi."
+      },
+      "setup": {
+        "title": "Impor data & pengaturan",
+        "desc": "Kami mengimpor data karyawan serta mengatur alur persetujuan dan komponen gaji sesuai kebijakan Anda."
+      },
+      "training": {
+        "title": "Pelatihan & go-live",
+        "desc": "Pelatihan langsung untuk HR dan manajer, dengan dukungan berkelanjutan setelah peluncuran."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Pertanyaan yang sering diajukan",
+    "items": {
+      "install": {
+        "q": "Apakah saya perlu menginstal software atau menyiapkan server?",
+        "a": "Tidak. Ini layanan cloud yang bisa diakses dari browser atau aplikasi seluler kami, dan semua pembaruan kami tangani."
+      },
+      "customize": {
+        "q": "Apakah bisa disesuaikan dengan kebijakan perusahaan kami?",
+        "a": "Ya. Shift, jenis cuti, alur persetujuan, dan komponen gaji semuanya dapat diatur, dan konsultan kami siap membantu kebutuhan khusus."
+      },
+      "migrate": {
+        "q": "Bisakah data dari sistem lama dipindahkan?",
+        "a": "Bisa. Kami menyediakan template impor Excel, dan konsultan akan membantu memeriksa serta mengonversi data Anda."
+      },
+      "security": {
+        "q": "Bagaimana data kami dilindungi?",
+        "a": "Data dienkripsi saat transit dan saat disimpan, dengan backup harian, kontrol akses berbasis peran, dan log audit lengkap."
+      },
+      "pricing": {
+        "q": "Bagaimana harga dihitung?",
+        "a": "Harga berdasarkan jumlah karyawan dan modul. Jadwalkan demo dan kami akan menyiapkan penawaran sesuai kebutuhan Anda."
+      }
+    }
+  },
+  "cta": {
+    "title": "Siap membuat pekerjaan HR lebih mudah?",
+    "description": "Jadwalkan demo online 30 menit. Konsultan akan memandu Anda menjelajahi produk sesuai kebutuhan dan memberi saran implementasi.",
+    "button": "Jadwalkan demo",
+    "mailSubject": "Permintaan demo {name}"
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi."
+  }
+}
