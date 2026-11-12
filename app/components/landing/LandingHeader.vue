@@ -29,11 +29,10 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
       <div class="flex h-14 items-center justify-between gap-4 pr-2 pl-4 sm:pl-5">
         <a
           href="#top"
-          class="flex shrink-0 items-center gap-2.5 rounded-full font-display text-lg font-semibold tracking-tight text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
+          class="flex shrink-0 items-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
           :aria-label="t('nav.home', { name: site.productName })"
         >
-          <LandingLogo class="size-7" />
-          {{ site.productName }}
+          <LandingLogo class="h-7" />
         </a>
 
         <nav

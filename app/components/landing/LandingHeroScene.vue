@@ -9,10 +9,10 @@ const { t } = useI18n()
     class="relative mx-auto w-full max-w-xl lg:max-w-none"
     aria-hidden="true"
   >
-    <!-- 最後層：萊姆黃圓形，往反方向慢慢移動 -->
+    <!-- 最後層：萊姆黃圓形，往反方向慢慢移動（手機上會被推到按鈕上，所以不顯示） -->
     <div
       v-parallax="0.12"
-      class="absolute -top-10 -right-6 size-40 rounded-full bg-accent sm:size-56"
+      class="absolute -top-10 -right-6 hidden size-56 rounded-full bg-accent sm:block"
     />
 
     <!-- 中間層：陶土色底板裡的人物照片 -->

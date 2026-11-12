@@ -90,7 +90,7 @@ const ctaHref = computed(() => {
             </div>
           </fieldset>
 
-          <div class="mt-6 flex flex-wrap gap-3">
+          <div class="relative z-10 mt-6 flex flex-wrap gap-3">
             <LandingButton
               :href="ctaHref"
               size="lg"

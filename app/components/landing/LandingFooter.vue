@@ -38,10 +38,10 @@ const columns = computed(() => [
     <LandingContainer>
       <div class="grid grid-cols-1 gap-12 border-t border-white/10 pt-16 lg:grid-cols-12">
         <div class="lg:col-span-5">
-          <p class="flex items-center gap-2.5 text-lg font-extrabold tracking-tight">
-            <LandingLogo class="size-8" />
-            {{ site.productName }}
-          </p>
+          <LandingLogo
+            variant="light"
+            class="h-9"
+          />
           <p class="mt-4 max-w-sm text-white/60">
             {{ t('footer.tagline') }}
           </p>

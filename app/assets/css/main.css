@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 /* 設計 token：顏色、字型、動態都在這裡定義，元件只用這些名稱，不寫色碼。
-   色調：暖石米白底、暖炭黑文字，萊姆黃當強調色（一律配黑字），陶土與鼠尾草當大面積的柔和底色 */
+   色調跟著 Orca 品牌：暖米白底、炭黑文字，萊姆黃當強調色（一律配黑字），淡蜜桃與鼠尾草當大面積的柔和底色 */
 @theme {
   --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Instrument Sans", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
 
-  /* 文字、主要按鈕、深色區塊 */
-  --color-ink: oklch(0.22 0.006 80);
-  --color-ink-soft: oklch(0.3 0.008 80);
-  /* 頁面底色 */
-  --color-paper: oklch(0.965 0.006 85);
+  /* 色值取自 Orca 品牌素材（logo 與插圖） */
+  /* 文字、主要按鈕、深色區塊：品牌炭黑 */
+  --color-ink: #1c1a19;
+  --color-ink-soft: #2a2826;
+  /* 頁面底色：品牌插圖的暖米白，插圖放上來會和頁面融在一起 */
+  --color-paper: #f2f1ec;
   /* 卡片底色（比頁面深一階） */
-  --color-stone: oklch(0.925 0.01 85);
+  --color-stone: #e6e3dc;
   /* 淺灰底：標籤、圖示底、按鈕 hover */
-  --color-mist: oklch(0.945 0.008 85);
+  --color-mist: #ebe9e3;
 
-  /* 萊姆黃：主要行動按鈕、重點標示；上面的字一律用 ink */
-  --color-accent: oklch(0.92 0.17 112);
-  --color-accent-strong: oklch(0.86 0.18 112);
-  /* 大面積柔和底色 */
-  --color-clay: oklch(0.9 0.035 55);
+  /* 品牌萊姆黃：主要行動按鈕、重點標示；上面的字一律用 ink */
+  --color-accent: #e3e63f;
+  --color-accent-strong: #d2d52c;
+  /* 大面積柔和底色：品牌淡蜜桃與鼠尾草 */
+  --color-clay: #efd6c9;
   --color-sage: oklch(0.91 0.03 150);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);

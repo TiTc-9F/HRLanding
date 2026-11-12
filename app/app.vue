@@ -5,10 +5,21 @@ const { t } = useI18n()
 // 依目前語系輸出 <html lang>、hreflang 與 canonical 等 SEO 標籤
 const i18nHead = useLocaleHead()
 
+// 分頁小圖示放在 public/；GitHub Pages 的網址有 /HRLanding/ 前綴，所以路徑要接上 baseURL
+const base = useRuntimeConfig().app.baseURL
+
 useHead(() => ({
   htmlAttrs: { lang: i18nHead.value.htmlAttrs.lang },
-  link: [...(i18nHead.value.link || [])],
-  meta: [...(i18nHead.value.meta || [])],
+  link: [
+    { rel: 'icon', href: `${base}favicon.ico`, sizes: '48x48' },
+    { rel: 'icon', type: 'image/png', href: `${base}icon-512.png`, sizes: '512x512' },
+    { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png` },
+    ...(i18nHead.value.link || []),
+  ],
+  meta: [
+    { name: 'theme-color', content: '#f2f1ec' },
+    ...(i18nHead.value.meta || []),
+  ],
 }))
 
 useSeoMeta({
