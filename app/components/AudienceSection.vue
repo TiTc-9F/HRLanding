@@ -52,14 +52,14 @@ function points(key: string) {
   >
     <div class="overflow-hidden py-24 sm:py-32 lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:justify-center lg:py-0 motion-reduce:lg:static motion-reduce:lg:h-auto motion-reduce:lg:py-32">
       <!-- 手機與減少動態：標題在卡片列上方 -->
-      <LandingContainer class="lg:hidden motion-reduce:lg:block">
-        <LandingSectionHeading
+      <PageContainer class="lg:hidden motion-reduce:lg:block">
+        <SectionHeading
           id="audience-title"
           :eyebrow="t('audience.eyebrow')"
           :title="t('audience.title')"
           dark
         />
-      </LandingContainer>
+      </PageContainer>
 
       <div
         ref="track"
@@ -68,7 +68,7 @@ function points(key: string) {
       >
         <!-- 桌機橫向捲動時，標題是卡片列的第一格，垂直置中；卡片則拉成一樣高，內容長短不同也會對齊 -->
         <div class="hidden w-[26rem] shrink-0 self-center pr-8 lg:block motion-reduce:lg:hidden">
-          <LandingSectionHeading
+          <SectionHeading
             :eyebrow="t('audience.eyebrow')"
             :title="t('audience.title')"
             dark
@@ -80,7 +80,7 @@ function points(key: string) {
           class="w-[85vw] max-w-[30rem] shrink-0 snap-start overflow-hidden rounded-[1.75rem] bg-ink-soft sm:w-[26rem] lg:w-[30rem]"
           :aria-labelledby="`role-${role}-title`"
         >
-          <LandingPhoto
+          <PersonPhoto
             :name="`role-${role}`"
             :alt="t(`photos.${role}`)"
             ratio="aspect-[16/10]"
@@ -99,7 +99,7 @@ function points(key: string) {
             <p class="mt-3 leading-relaxed text-pretty text-white/65">
               {{ t(`audience.tabs.${role}.desc`) }}
             </p>
-            <LandingCheckList
+            <CheckList
               :items="points(role)"
               dark
               class="mt-6 text-sm"

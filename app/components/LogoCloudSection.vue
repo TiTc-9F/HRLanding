@@ -16,14 +16,14 @@ const companies = [
     class="logo-marquee py-14 sm:py-20"
     :aria-label="t('proof.caption', { name: site.productName })"
   >
-    <LandingContainer class="flex flex-wrap items-center justify-center gap-3 text-center">
+    <PageContainer class="flex flex-wrap items-center justify-center gap-3 text-center">
       <p class="font-mono text-xs tracking-[0.18em] text-ink/55 uppercase">
         {{ t('proof.caption', { name: site.productName }) }}
       </p>
       <span class="rounded-full bg-ink/5 px-2.5 py-0.5 text-[11px] font-semibold text-ink/55">
         {{ t('proof.mockBadge') }}
       </span>
-    </LandingContainer>
+    </PageContainer>
 
     <div class="mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] motion-reduce:[mask-image:none]">
       <!-- 兩份清單各自帶右側間距、彼此不留 gap，往左移 50% 時才接得無縫 -->
@@ -39,7 +39,7 @@ const companies = [
             v-for="company in companies"
             :key="company"
           >
-            <LandingMockLogo :name="company" />
+            <SampleLogo :name="company" />
           </li>
         </ul>
       </div>

@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/i18n',
   ],
+  // 共用元件放 components/common/，名稱不加資料夾前綴，
+  // 例如 components/common/BaseButton.vue 直接用 <BaseButton />
+  components: [
+    { path: '~/components', pathPrefix: false },
+  ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2025-07-15',

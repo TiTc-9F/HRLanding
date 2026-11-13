@@ -24,9 +24,9 @@ function points(key: string) {
     class="py-24 sm:py-32"
     aria-labelledby="platform-title"
   >
-    <LandingContainer>
+    <PageContainer>
       <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
-        <LandingSectionHeading
+        <SectionHeading
           id="platform-title"
           :eyebrow="t('platform.eyebrow')"
           :title="t('platform.title')"
@@ -79,7 +79,7 @@ function points(key: string) {
               >
                 {{ t(`stack.items.${card.key}.desc`) }}
               </p>
-              <LandingCheckList
+              <CheckList
                 :items="points(card.key)"
                 :dark="card.key === 'care'"
                 class="mt-8"
@@ -87,12 +87,12 @@ function points(key: string) {
             </div>
             <div class="relative">
               <div v-parallax="-0.06">
-                <LandingStackVisual :variant="card.key" />
+                <PlatformVisual :variant="card.key" />
               </div>
             </div>
           </article>
         </li>
       </ol>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

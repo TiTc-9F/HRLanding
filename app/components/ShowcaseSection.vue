@@ -5,7 +5,7 @@ const { t } = useI18n()
 
 const items = ['configure', 'routing', 'payroll'] as const
 const active = ref(0)
-const blocks = ref<HTMLElement[]>([])
+const blocks = shallowRef<HTMLElement[]>([])
 
 function points(key: string) {
   return ['p1', 'p2', 'p3'].map(p => t(`showcase.items.${key}.points.${p}`))
@@ -34,10 +34,10 @@ onBeforeUnmount(() => observer?.disconnect())
     class="py-24 sm:py-32"
     aria-labelledby="showcase-title"
   >
-    <LandingContainer class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+    <PageContainer class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
       <div class="lg:col-span-5">
         <div class="lg:sticky lg:top-28">
-          <LandingSectionHeading
+          <SectionHeading
             id="showcase-title"
             compact
             :eyebrow="t('showcase.eyebrow')"
@@ -100,13 +100,13 @@ onBeforeUnmount(() => observer?.disconnect())
           <p class="mt-4 text-lg leading-relaxed text-ink/65 lg:hidden">
             {{ t(`showcase.items.${key}.desc`) }}
           </p>
-          <LandingCheckList
+          <CheckList
             :items="points(key)"
             class="mt-6 mb-10 lg:hidden"
           />
 
           <div class="relative">
-            <LandingPhoto
+            <PersonPhoto
               :name="`showcase-${key}`"
               :alt="t(`photos.${key}`)"
               class="w-[86%] rounded-[1.75rem]"
@@ -117,13 +117,13 @@ onBeforeUnmount(() => observer?.disconnect())
               class="relative z-10 -mt-[32%] w-[94%] sm:w-[78%]"
               :class="i % 2 === 1 ? 'ml-auto' : 'mr-auto'"
             >
-              <LandingMockConfigure v-if="key === 'configure'" />
-              <LandingMockRouting v-else-if="key === 'routing'" />
-              <LandingMockPayroll v-else />
+              <ConfigureMock v-if="key === 'configure'" />
+              <RoutingMock v-else-if="key === 'routing'" />
+              <PayrollMock v-else />
             </div>
           </div>
         </article>
       </div>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

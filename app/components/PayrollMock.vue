@@ -16,7 +16,7 @@ const rows = computed(() => [
 
 <template>
   <div ref="root">
-    <LandingMockFrame
+    <MockFrame
       :title="t('showcase.mock.payrollTitle')"
       :meta="t('showcase.mock.payrollEmployees')"
       aria-hidden="true"
@@ -28,13 +28,13 @@ const rows = computed(() => [
           class="flex items-center gap-3 py-3"
         >
           <span class="grid size-9 shrink-0 place-items-center rounded-lg bg-paper text-ink/70">
-            <LandingIcon
+            <AppIcon
               :name="row.icon"
               class="size-4"
             />
           </span>
           <span class="min-w-0 flex-1 truncate text-sm font-medium text-ink">{{ row.label }}</span>
-          <LandingStatusPill
+          <StatusPill
             :tone="step > i ? 'done' : 'waiting'"
             :label="step > i ? row.status : t('heroVisual.waiting')"
           />
@@ -58,13 +58,13 @@ const rows = computed(() => [
           class="inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-semibold transition-colors duration-500"
           :class="step >= 5 ? 'bg-accent text-ink' : 'bg-ink text-white'"
         >
-          <LandingIcon
+          <AppIcon
             name="mail"
             class="size-4"
           />
           {{ t('showcase.mock.payslips') }}
         </span>
       </div>
-    </LandingMockFrame>
+    </MockFrame>
   </div>
 </template>

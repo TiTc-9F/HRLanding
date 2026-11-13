@@ -30,9 +30,9 @@ const icons = {
   wifi: 'M8.25 15.75a5.25 5.25 0 0 1 7.5 0M5.25 12.75a9.5 9.5 0 0 1 13.5 0M2.25 9.75a13.75 13.75 0 0 1 19.5 0M12 19.5h.01',
 } as const
 
-export type LandingIconName = keyof typeof icons
+export type IconName = keyof typeof icons
 
-defineProps<{ name: LandingIconName }>()
+defineProps<{ name: IconName }>()
 </script>
 
 <template>

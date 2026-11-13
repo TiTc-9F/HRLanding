@@ -35,10 +35,10 @@ const columns = computed(() => [
 
 <template>
   <footer class="bg-ink pt-4 pb-10 text-white">
-    <LandingContainer>
+    <PageContainer>
       <div class="grid grid-cols-1 gap-12 border-t border-white/10 pt-16 lg:grid-cols-12">
         <div class="lg:col-span-5">
-          <LandingLogo
+          <BrandLogo
             variant="light"
             class="h-9"
           />
@@ -78,6 +78,6 @@ const columns = computed(() => [
       <p class="mt-16 text-sm text-white/45">
         © {{ year }} {{ site.productName }}. {{ t('footer.rights') }}
       </p>
-    </LandingContainer>
+    </PageContainer>
   </footer>
 </template>

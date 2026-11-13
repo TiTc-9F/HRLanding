@@ -14,9 +14,9 @@ const cases = ['global', 'tech', 'growth'] as const
     class="bg-white py-24 sm:py-32"
     aria-labelledby="customers-title"
   >
-    <LandingContainer>
+    <PageContainer>
       <div class="flex flex-wrap items-end justify-between gap-6">
-        <LandingSectionHeading
+        <SectionHeading
           id="customers-title"
           :eyebrow="t('cases.eyebrow')"
           :title="t('cases.title')"
@@ -42,7 +42,7 @@ const cases = ['global', 'tech', 'growth'] as const
                  桌機三欄：頭像在上、姓名在下 -->
             <figcaption class="flex items-center gap-5 lg:block">
               <!-- 名字就在旁邊，頭像當裝飾，不重複唸 -->
-              <LandingPhoto
+              <PersonPhoto
                 :name="`portrait-${key}`"
                 alt=""
                 ratio="aspect-square"
@@ -77,7 +77,7 @@ const cases = ['global', 'tech', 'growth'] as const
             </div>
           </dl>
 
-          <LandingMockLogo
+          <SampleLogo
             :name="t(`cases.items.${key}.company`)"
             class="mt-10 text-2xl text-ink"
           />
@@ -87,6 +87,6 @@ const cases = ['global', 'tech', 'growth'] as const
       <p class="mt-10 text-sm text-ink/50">
         {{ t('cases.note') }}
       </p>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

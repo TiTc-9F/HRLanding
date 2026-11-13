@@ -1,13 +1,13 @@
 <script setup lang="ts">
 // 連結形式的按鈕。
 // primary：萊姆黃底黑字（主要行動）；dark：黑底白字；secondary：白底描邊；ghost-light：深色區塊上的描邊
-import type { LandingIconName } from './LandingIcon.vue'
+import type { IconName } from '~/components/common/AppIcon.vue'
 
 withDefaults(defineProps<{
   href: string
   variant?: 'primary' | 'dark' | 'secondary' | 'ghost-light'
   size?: 'md' | 'lg'
-  icon?: LandingIconName
+  icon?: IconName
 }>(), { variant: 'primary', size: 'md', icon: undefined })
 
 const variants = {
@@ -30,7 +30,7 @@ const sizes = {
     :class="[variants[variant], sizes[size]]"
   >
     <slot />
-    <LandingIcon
+    <AppIcon
       v-if="icon"
       :name="icon"
       class="size-4 transition-transform duration-200 group-hover:translate-x-0.5"

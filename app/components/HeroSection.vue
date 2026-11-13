@@ -31,7 +31,7 @@ const ctaHref = computed(() => {
     aria-labelledby="hero-title"
   >
     <div class="relative isolate mx-auto max-w-[96rem] overflow-hidden rounded-[2rem] bg-white sm:rounded-[2.5rem]">
-      <LandingContainer class="grid grid-cols-1 items-center gap-14 pt-14 pb-16 sm:pt-20 lg:grid-cols-12 lg:gap-10 lg:pt-24 lg:pb-24">
+      <PageContainer class="grid grid-cols-1 items-center gap-14 pt-14 pb-16 sm:pt-20 lg:grid-cols-12 lg:gap-10 lg:pt-24 lg:pb-24">
         <div class="lg:col-span-6">
           <p class="inline-flex items-center gap-2 rounded-full bg-mist px-3.5 py-1.5 text-sm font-medium text-ink/75">
             <span
@@ -79,7 +79,7 @@ const ctaHref = computed(() => {
                   :class="picked.includes(key) ? 'border-accent bg-accent text-ink' : 'border-ink/25 bg-white'"
                   aria-hidden="true"
                 >
-                  <LandingIcon
+                  <AppIcon
                     v-if="picked.includes(key)"
                     name="check"
                     class="size-3.5"
@@ -91,25 +91,25 @@ const ctaHref = computed(() => {
           </fieldset>
 
           <div class="relative z-10 mt-6 flex flex-wrap gap-3">
-            <LandingButton
+            <BaseButton
               :href="ctaHref"
               size="lg"
               icon="arrow"
             >
               {{ ctaLabel }}
-            </LandingButton>
-            <LandingButton
+            </BaseButton>
+            <BaseButton
               href="#platform"
               variant="secondary"
               size="lg"
             >
               {{ t('hero.secondary') }}
-            </LandingButton>
+            </BaseButton>
           </div>
         </div>
 
-        <LandingHeroScene class="lg:col-span-6" />
-      </LandingContainer>
+        <HeroScene class="lg:col-span-6" />
+      </PageContainer>
     </div>
   </section>
 </template>

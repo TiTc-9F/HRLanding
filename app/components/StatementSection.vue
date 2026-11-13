@@ -43,8 +43,8 @@ function opacity(index: number) {
     aria-labelledby="statement-eyebrow"
   >
     <div class="sticky top-0 flex min-h-dvh items-center motion-reduce:static motion-reduce:py-28">
-      <LandingContainer>
-        <LandingEyebrow
+      <PageContainer>
+        <SectionEyebrow
           id="statement-eyebrow"
           :label="t('statement.eyebrow')"
         />
@@ -64,7 +64,7 @@ function opacity(index: number) {
             {{ text }}
           </template>
         </p>
-      </LandingContainer>
+      </PageContainer>
     </div>
   </section>
 </template>

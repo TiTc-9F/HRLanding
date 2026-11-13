@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { LandingIconName } from './LandingIcon.vue'
+import type { IconName } from '~/components/common/AppIcon.vue'
 
 // 安全與權限：左邊說明加一組隨捲動錯開的同心圓（裝飾），右邊四張卡片
 const { site } = useAppConfig()
 const { t } = useI18n()
 
-const items: { key: string, icon: LandingIconName }[] = [
+const items: { key: string, icon: IconName }[] = [
   { key: 'roles', icon: 'users' },
   { key: 'visibility', icon: 'eye' },
   { key: 'audit', icon: 'file' },
@@ -19,9 +19,9 @@ const items: { key: string, icon: LandingIconName }[] = [
     class="py-24 sm:py-32"
     aria-labelledby="trust-title"
   >
-    <LandingContainer class="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
+    <PageContainer class="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
       <div class="lg:col-span-5">
-        <LandingSectionHeading
+        <SectionHeading
           id="trust-title"
           compact
           :eyebrow="t('trust.eyebrow')"
@@ -48,7 +48,7 @@ const items: { key: string, icon: LandingIconName }[] = [
             v-parallax="-0.12"
             class="absolute inset-[36%] grid place-items-center rounded-full bg-ink text-accent"
           >
-            <LandingIcon
+            <AppIcon
               name="shield"
               class="size-12"
             />
@@ -64,7 +64,7 @@ const items: { key: string, icon: LandingIconName }[] = [
           class="flex flex-col rounded-[1.75rem] bg-white p-7"
         >
           <span class="grid size-12 place-items-center rounded-2xl bg-accent text-ink">
-            <LandingIcon
+            <AppIcon
               :name="item.icon"
               class="size-6"
             />
@@ -77,6 +77,6 @@ const items: { key: string, icon: LandingIconName }[] = [
           </p>
         </li>
       </ul>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

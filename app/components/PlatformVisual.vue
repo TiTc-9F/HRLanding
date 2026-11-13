@@ -28,7 +28,7 @@ const days = computed(() => [
     >
       <div class="flex items-center gap-4 rounded-2xl bg-paper p-5">
         <span class="grid size-12 place-items-center rounded-2xl bg-sage text-ink">
-          <LandingIcon
+          <AppIcon
             name="wifi"
             class="size-6"
           />
@@ -47,7 +47,7 @@ const days = computed(() => [
           {{ t('heroVisual.leaveTitle') }}
         </p>
         <div class="mt-3 flex items-center gap-3">
-          <LandingAvatar
+          <UserAvatar
             name="Noah Wu"
             size="md"
           />
@@ -117,7 +117,7 @@ const days = computed(() => [
       </ul>
       <div class="mt-6 flex items-center gap-3 rounded-2xl bg-ink p-4 text-white">
         <span class="grid size-10 place-items-center rounded-xl bg-accent text-ink">
-          <LandingIcon
+          <AppIcon
             name="trend"
             class="size-5"
           />
@@ -139,7 +139,7 @@ const days = computed(() => [
       class="rounded-3xl bg-white p-6 text-ink"
     >
       <div class="flex items-center gap-3">
-        <LandingAvatar
+        <UserAvatar
           name="Emma Hsu"
           size="md"
         />
@@ -158,7 +158,7 @@ const days = computed(() => [
         </li>
       </ul>
       <p class="mt-5 inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1.5 text-xs font-semibold">
-        <LandingIcon
+        <AppIcon
           name="eye"
           class="size-3.5"
         />

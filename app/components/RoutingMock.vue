@@ -11,13 +11,13 @@ const hidden = 'translate-y-2 opacity-0'
 
 <template>
   <div ref="root">
-    <LandingMockFrame
+    <MockFrame
       :title="t('showcase.mock.routingTitle')"
       aria-hidden="true"
     >
       <ol class="space-y-4">
         <li class="flex items-center gap-4 rounded-xl border border-ink/10 p-4">
-          <LandingAvatar
+          <UserAvatar
             name="Mia Chen"
             size="md"
           />
@@ -29,7 +29,7 @@ const hidden = 'translate-y-2 opacity-0'
               Mia Chen
             </p>
           </div>
-          <LandingStatusPill
+          <StatusPill
             :tone="step >= 1 ? 'done' : 'active'"
             :label="step >= 1 ? t('heroVisual.done') : t('heroVisual.inProgress')"
           />
@@ -41,7 +41,7 @@ const hidden = 'translate-y-2 opacity-0'
         >
           <div class="flex items-center gap-4">
             <span class="grid size-10 shrink-0 place-items-center rounded-full bg-ink text-white">
-              <LandingIcon
+              <AppIcon
                 name="users"
                 class="size-5"
               />
@@ -54,7 +54,7 @@ const hidden = 'translate-y-2 opacity-0'
                 {{ t('showcase.mock.routingReviewerWho') }}
               </p>
             </div>
-            <LandingStatusPill
+            <StatusPill
               :tone="step >= 1 ? 'active' : 'waiting'"
               :label="step >= 1 ? t('heroVisual.inProgress') : t('heroVisual.waiting')"
             />
@@ -66,14 +66,14 @@ const hidden = 'translate-y-2 opacity-0'
               class="flex items-center gap-2.5 rounded-lg bg-white p-2.5 transition duration-500 ease-out-expo"
               :class="step >= i + 2 ? '' : hidden"
             >
-              <LandingAvatar :name="person" />
+              <UserAvatar :name="person" />
               <span class="truncate text-sm font-medium text-ink">{{ person }}</span>
             </div>
           </div>
         </li>
 
         <li class="flex items-center gap-4 rounded-xl border border-ink/10 p-4">
-          <LandingAvatar
+          <UserAvatar
             name="Ava Lin"
             size="md"
           />
@@ -85,7 +85,7 @@ const hidden = 'translate-y-2 opacity-0'
               Ava Lin
             </p>
           </div>
-          <LandingStatusPill
+          <StatusPill
             tone="waiting"
             :label="t('heroVisual.waiting')"
           />
@@ -96,12 +96,12 @@ const hidden = 'translate-y-2 opacity-0'
         class="mt-5 flex gap-3 rounded-xl bg-ink p-4 text-sm leading-relaxed text-white/85 transition duration-500 ease-out-expo"
         :class="step >= 4 ? '' : hidden"
       >
-        <LandingIcon
+        <AppIcon
           name="route"
           class="mt-0.5 size-5 shrink-0 text-accent"
         />
         {{ t('showcase.mock.orgChange') }}
       </p>
-    </LandingMockFrame>
+    </MockFrame>
   </div>
 </template>

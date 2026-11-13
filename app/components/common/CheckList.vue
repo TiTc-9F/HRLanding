@@ -15,7 +15,7 @@ withDefaults(defineProps<{ items: string[], dark?: boolean }>(), { dark: false }
         class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
         :class="dark ? 'bg-accent text-ink' : 'bg-ink text-accent'"
       >
-        <LandingIcon
+        <AppIcon
           name="check"
           class="size-3"
         />

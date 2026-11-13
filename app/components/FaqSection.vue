@@ -10,8 +10,8 @@ const faqs = ['modules', 'customize', 'install', 'migrate', 'security', 'pricing
     class="py-24 sm:py-32"
     aria-labelledby="faq-title"
   >
-    <LandingContainer class="grid grid-cols-1 gap-12 lg:grid-cols-12">
-      <LandingSectionHeading
+    <PageContainer class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+      <SectionHeading
         id="faq-title"
         compact
         :eyebrow="t('faq.eyebrow')"
@@ -28,7 +28,7 @@ const faqs = ['modules', 'customize', 'install', 'migrate', 'security', 'pricing
           <summary class="flex min-h-18 cursor-pointer list-none items-center justify-between gap-6 py-5 font-display text-lg font-medium text-ink focus-visible:outline-2 focus-visible:outline-ink [&::-webkit-details-marker]:hidden">
             {{ t(`faq.items.${faq}.q`) }}
             <span class="grid size-9 shrink-0 place-items-center rounded-full bg-mist transition-[transform,background-color] duration-300 group-open:rotate-45 group-open:bg-accent motion-reduce:transition-none">
-              <LandingIcon
+              <AppIcon
                 name="plus"
                 class="size-4"
               />
@@ -39,6 +39,6 @@ const faqs = ['modules', 'customize', 'install', 'migrate', 'security', 'pricing
           </p>
         </details>
       </div>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

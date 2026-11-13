@@ -35,7 +35,7 @@ const salesHref = computed(() => mailto(t('cta.salesSubject', { name: site.produ
         />
       </div>
 
-      <LandingContainer class="text-center">
+      <PageContainer class="text-center">
         <p class="text-sm font-semibold tracking-wide text-ink/70">
           {{ t('cta.eyebrow') }}
         </p>
@@ -49,21 +49,21 @@ const salesHref = computed(() => mailto(t('cta.salesSubject', { name: site.produ
           {{ t('cta.description') }}
         </p>
         <div class="mt-10 flex flex-wrap justify-center gap-3">
-          <LandingButton
+          <BaseButton
             :href="demoHref"
             variant="dark"
             size="lg"
             icon="arrow"
           >
             {{ t('cta.primary') }}
-          </LandingButton>
-          <LandingButton
+          </BaseButton>
+          <BaseButton
             :href="salesHref"
             variant="secondary"
             size="lg"
           >
             {{ t('cta.secondary') }}
-          </LandingButton>
+          </BaseButton>
         </div>
         <!-- 降低決定的門檻：時間短、可以小規模先試、不需要 IT -->
         <ul class="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-ink/75">
@@ -72,7 +72,7 @@ const salesHref = computed(() => mailto(t('cta.salesSubject', { name: site.produ
             :key="a"
             class="flex items-center gap-2"
           >
-            <LandingIcon
+            <AppIcon
               name="check"
               class="size-4"
             />
@@ -82,7 +82,7 @@ const salesHref = computed(() => mailto(t('cta.salesSubject', { name: site.produ
         <p class="mt-6 text-sm text-ink/60">
           {{ site.contactEmail }}
         </p>
-      </LandingContainer>
+      </PageContainer>
     </div>
   </section>
 </template>

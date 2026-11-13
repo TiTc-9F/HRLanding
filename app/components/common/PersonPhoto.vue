@@ -76,7 +76,7 @@ onBeforeUnmount(() => observer?.disconnect())
       :aria-hidden="alt ? undefined : 'true'"
     >
       <p class="max-w-xs text-xs leading-relaxed text-ink/45">
-        <LandingIcon
+        <AppIcon
           name="users"
           class="mx-auto mb-2 size-6"
         />

@@ -13,7 +13,7 @@ const { t } = useI18n()
         v-parallax="0.18"
         class="absolute inset-x-0 -top-[15%] h-[130%]"
       >
-        <LandingPhoto
+        <PersonPhoto
           name="people-band"
           :alt="t('photos.band')"
           ratio="h-full"
@@ -24,14 +24,14 @@ const { t } = useI18n()
         aria-hidden="true"
       />
       <div class="absolute inset-x-0 bottom-0">
-        <LandingContainer class="pb-10 sm:pb-16">
+        <PageContainer class="pb-10 sm:pb-16">
           <p
             v-parallax="-0.08"
             class="max-w-4xl font-display text-[clamp(1.9rem,4.5vw,4rem)] leading-[1.1] font-medium tracking-[-0.03em] text-balance text-white"
           >
             {{ t('peopleBand.quote') }}
           </p>
-        </LandingContainer>
+        </PageContainer>
       </div>
     </div>
   </section>

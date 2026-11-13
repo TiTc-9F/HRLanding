@@ -33,7 +33,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
           class="flex shrink-0 items-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           :aria-label="t('nav.home', { name: site.productName })"
         >
-          <LandingLogo
+          <BrandLogo
             variant="light"
             class="h-7"
           />
@@ -55,10 +55,10 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
         <div class="flex items-center gap-2">
           <div class="hidden items-center gap-2 sm:flex">
-            <LandingLanguageSwitcher dark />
-            <LandingButton href="#contact">
+            <LanguageSwitcher dark />
+            <BaseButton href="#contact">
               {{ t('nav.bookDemo') }}
-            </LandingButton>
+            </BaseButton>
           </div>
           <button
             type="button"
@@ -68,7 +68,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
             :aria-label="open ? t('nav.close') : t('nav.menu')"
             @click="open = !open"
           >
-            <LandingIcon
+            <AppIcon
               :name="open ? 'close' : 'menu'"
               class="size-5"
             />
@@ -94,14 +94,14 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
         </a>
       </nav>
       <div class="mt-4 flex flex-col gap-3 sm:hidden">
-        <LandingLanguageSwitcher dark />
-        <LandingButton
+        <LanguageSwitcher dark />
+        <BaseButton
           href="#contact"
           size="lg"
           @click="open = false"
         >
           {{ t('nav.bookDemo') }}
-        </LandingButton>
+        </BaseButton>
       </div>
     </div>
   </header>

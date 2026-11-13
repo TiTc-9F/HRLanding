@@ -17,10 +17,10 @@ const fill = computed(() => (enabled.value ? Math.min(1, Math.max(0, (progress.v
     class="py-24 sm:py-32"
     aria-labelledby="steps-title"
   >
-    <LandingContainer class="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
+    <PageContainer class="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
       <div class="lg:col-span-5">
         <div class="lg:sticky lg:top-28">
-          <LandingSectionHeading
+          <SectionHeading
             id="steps-title"
             compact
             :eyebrow="t('steps.eyebrow')"
@@ -62,6 +62,6 @@ const fill = computed(() => (enabled.value ? Math.min(1, Math.max(0, (progress.v
           </p>
         </li>
       </ol>
-    </LandingContainer>
+    </PageContainer>
   </section>
 </template>

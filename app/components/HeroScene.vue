@@ -25,7 +25,7 @@ const bars = computed(() => [step.value >= 1 ? 100 : 0, step.value >= 2 ? 62 : 0
       v-parallax="-0.05"
       class="relative rounded-[2rem] bg-clay p-3 sm:p-4"
     >
-      <LandingPhoto
+      <PersonPhoto
         name="hero-one-on-one"
         :alt="t('photos.hero')"
         ratio="aspect-[4/5] sm:aspect-[5/6]"
@@ -72,7 +72,7 @@ const bars = computed(() => [step.value >= 1 ? 100 : 0, step.value >= 2 ? 62 : 0
     >
       <div class="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-[0_20px_50px_-20px_rgb(0_0_0/0.35)] motion-safe:animate-[float-y_7s_ease-in-out_infinite_-2s]">
         <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-sage text-ink">
-          <LandingIcon
+          <AppIcon
             name="wifi"
             class="size-5"
           />
@@ -94,7 +94,7 @@ const bars = computed(() => [step.value >= 1 ? 100 : 0, step.value >= 2 ? 62 : 0
     >
       <div class="flex items-center gap-3 rounded-2xl bg-ink p-4 text-white shadow-[0_20px_50px_-20px_rgb(0_0_0/0.5)] motion-safe:animate-[float-y_8s_ease-in-out_infinite_-4s]">
         <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-accent text-ink">
-          <LandingIcon
+          <AppIcon
             name="trend"
             class="size-5"
           />

@@ -17,7 +17,7 @@ const current = computed({
 <template>
   <label class="relative flex items-center">
     <span class="sr-only">{{ t('nav.language') }}</span>
-    <LandingIcon
+    <AppIcon
       name="globe"
       class="pointer-events-none absolute left-3 size-4"
       :class="dark ? 'text-white/70' : 'text-ink/60'"

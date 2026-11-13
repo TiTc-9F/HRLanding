@@ -13,7 +13,7 @@ withDefaults(defineProps<{
 
 <template>
   <div :class="center ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'">
-    <LandingEyebrow
+    <SectionEyebrow
       :label="eyebrow"
       :dark="dark"
       :class="center ? 'justify-center' : ''"

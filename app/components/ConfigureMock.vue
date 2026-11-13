@@ -15,12 +15,12 @@ const steps = computed(() => [
 
 <template>
   <div ref="root">
-    <LandingMockFrame
+    <MockFrame
       :title="t('showcase.mock.configureTitle')"
       aria-hidden="true"
     >
       <template #badge>
-        <LandingStatusPill
+        <StatusPill
           tone="draft"
           :label="t('showcase.mock.draft')"
         />
@@ -55,7 +55,7 @@ const steps = computed(() => [
 
         <div class="rounded-xl bg-paper p-4">
           <p class="flex items-center gap-2 text-xs font-semibold text-ink/60">
-            <LandingIcon
+            <AppIcon
               name="eye"
               class="size-4"
             />
@@ -71,7 +71,7 @@ const steps = computed(() => [
               class="flex items-center gap-2.5 transition duration-500 ease-out-expo"
               :class="step > i * 2 + 1 ? '' : 'translate-y-2 opacity-0'"
             >
-              <LandingAvatar :name="item.person" />
+              <UserAvatar :name="item.person" />
               <div class="min-w-0">
                 <p class="truncate text-sm font-medium text-ink">
                   {{ item.person }}
@@ -84,6 +84,6 @@ const steps = computed(() => [
           </ol>
         </div>
       </div>
-    </LandingMockFrame>
+    </MockFrame>
   </div>
 </template>
